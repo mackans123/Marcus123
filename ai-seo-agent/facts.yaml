@@ -1,0 +1,78 @@
+# Albacross approved facts: the single source of truth for all AI SEO agents.
+# status: DRAFT v0.1 (2026-11-02), extracted from albacross.com/pricing and /llms.txt.
+# OWNER: PMM must review every field marked verify: true before writers rely on it.
+# ⚠️ Known inconsistencies on albacross.com are listed under `site_inconsistencies`; fix them on the site.
+
+company:
+  name: Albacross
+  legal_entity: Albacross Nordic AB
+  founded: 2014
+  hq: Stockholm, Sweden
+  website: https://www.albacross.com
+  category: B2B website visitor identification and intent data platform
+  secondary_categories: [intent data, account-based marketing, sales engagement / outbound automation, IP-to-company API]
+  customers: "10,000+ B2B companies"          # verify: true (source: llms.txt)
+  data_volume: "3+ billion events processed monthly"  # verify: true (source: llms.txt)
+  integrations_count: "30+ native integrations"       # verify: true
+
+identification:
+  level: company-level (identifies the organisation behind a visit, not the individual person)
+  contacts: verified emails and direct phone numbers for decision-makers at identified companies, via credits (data waterfall across leading providers)
+  enrichment: [company size, industry, revenue, location, technology used]
+  intent: on-site behaviour + off-site research intent via Bombora partnership; "100+ buying intent signals"  # verify: true
+  coverage_by_region: "[[VERIFY: identification/match rates EU vs US vs Nordics. Needed for comparison pages]]"
+
+product_modules:   # current site navigation names (2026-11)
+  identify: See which companies visit your site and what they care about
+  signal: Score every account by fit and intent
+  automate: Sync hot accounts to CRM, Slack, Teams and ad audiences
+  engage: AI-powered automatic email and LinkedIn sequences to decision-makers
+  tools: [IP to Company API (Reveal API), Chrome extension (verified emails/phones on LinkedIn), LinkedIn Matched Audiences, ABM display ads (IP-based)]
+  legacy_names: [Gain Insight, Generate Leads, Auto-Engage™]   # still used in llms.txt and old pages
+
+pricing:   # source: https://www.albacross.com/pricing, checked 2026-11-02
+  currency: EUR
+  billing_note: "Listed prices are per month, billed yearly; annual billing saves 30% vs monthly"
+  free_trial: 14 days, no credit card required
+  plans:
+    - name: Starter
+      price_from: "€59/month (billed yearly)"
+      identified_companies: "tiers 0–50 and 50–100 per month"
+      credits_included: "10 verified email + 5 verified phone credits"
+      highlights: [AI email sequences, AI LinkedIn sequences, AI buyer persona recommendations, AI segmentation, lead insights, LinkedIn contact finder (Chrome), advanced filters, Slack & Teams, Pipedrive integration]
+    - name: Professional
+      price_from: "€149/month (billed yearly)"
+      identified_companies: "tiers 0–250 and 251–500 per month"
+      credits_included: "25 verified email + 10 verified phone credits"
+      highlights: [everything in Starter, unlimited sequences, LinkedIn Ads integration, Google Sheets, CSV export, priority support, HubSpot integration]
+    - name: Organisation
+      price_from: "Talk to us"
+      identified_companies: "501–1,000 / 1,000–2,000+ per month"
+      highlights: ["[[VERIFY: Salesforce integration tier, SSO, API access]]"]
+  add_on_credits: "Email credits from €0.11–0.17 each, phone credits from €0.37–0.57 each (monthly); annual bundles available"
+  per_user: "[[VERIFY: is pricing per user or per account? llms.txt says per user, pricing page does not]]"
+
+integrations_confirmed: [Salesforce (two-way), HubSpot (two-way, Professional+), Pipedrive (two-way), Slack, Microsoft Teams, LinkedIn Matched Audiences, LinkedIn Ads, Google Sheets, Google Analytics, CSV export]
+
+compliance:
+  gdpr: "Built for GDPR and CCPA compliance; Data Processing Agreement available"
+  dpa_url: https://www.albacross.com/data-processing-agreement
+  gdpr_page: https://www.albacross.com/newsroom/albacross-gdpr
+  legal_basis: "[[VERIFY with legal: legitimate interest wording we are allowed to use publicly]]"
+
+best_fit:   # verify: true (refine with VOC + won-deal data)
+  - B2B sales and marketing teams in Europe, or selling into Europe, that need a GDPR-safe approach
+  - SMB to mid-market teams that want identification + intent + automated outreach in one tool with published pricing
+  - Teams needing an IP-to-company API for product/website personalisation
+not_a_fit:
+  - Teams that specifically need person-level (individual visitor) identification of US traffic. Consider person-level tools instead.
+
+proof:   # public case studies only
+  customer_stories: [PayFit, CloudTalk, Omron, Spendesk, Planday, Qvantum]
+  quotes: "[[VERIFY: pull approved quotes + metrics from each case study page]]"
+
+site_inconsistencies:   # fix on albacross.com so LLMs don't learn conflicting facts
+  - "llms.txt says Starter 'up to 100', Professional 'up to 1,000' identified companies and Organisation 'from €375/user/month'; the pricing page shows Professional tiers up to 500 and Organisation 'Talk to us'."
+  - "llms.txt says prices are per user; the pricing page doesn't say per user."
+  - "llms.txt and older pages use Gain Insight / Generate Leads / Auto-Engage; site nav uses Identify / Signal / Automate / Engage."
+  - "Third-party: RB2B's Leadfeeder-alternatives page lists Albacross at €99 and €79 (both wrong vs €59 from)."
