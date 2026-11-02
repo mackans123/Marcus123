@@ -215,7 +215,8 @@ Each H2 is phrased as the question. The first 1–2 sentences under it must answ
 | DPA revised 2024-10-02. Customer = controller, Albacross = processor, and Albacross = controller for data stored to improve its database. Data subjects include website visitors and employees of identified companies. IPv4/IPv6, cookie IDs, URLs and referrer are processed. Sub-processor list (Schedule 3). Breach notice "without undue delay". Swedish law, SCC arbitration | https://www.albacross.com/data-processing-agreement |
 | Data processed incl. "fingerprint hash" ⚠️ C3. DPA can be signed via legal@albacross.com. Cognism named as contact-data partner. Updated 2026-08-13 | https://help.albacross.com/en/articles/3933505-gdpr-frequently-asked-questions |
 | Consent steps, cookie table (nQ_cookieId, nQ_visitId, 1 year), notice text. Updated 2025-10-01 | https://help.albacross.com/en/articles/1933616-gdpr-compliance-checklist |
-| 2020 GDPR FAQ. **Do not reuse its "company data not personal data" line** | https://www.albacross.com/newsroom/albacross-gdpr |
+| Privacy policy, revised 2024-10-02. Controller is Albacross Nordic AB. Legitimate interest for Albacross's own IP-based processing ("improve our Services"). "Your information is stored on servers located in Ireland". IP + company "may constitute personal data" (e.g. sole traders). Lead Contact Data deleted within 30 days if there is no response. Right to object via support@albacross.com. Supervisory authority IMY. Cookie retention 24 months (⚠️ the checklist says 1 year) | https://www.albacross.com/privacy-policy |
+| 2020 GDPR FAQ. **Do not reuse it.** See the line-by-line audit in ai-seo-agent/research/gdpr-assets-refresh-audit.md | https://www.albacross.com/newsroom/albacross-gdpr |
 | Compliance positioning ("Built for GDPR and CCPA compliance; DPA available") | `facts.yaml → compliance` |
 
 **Do NOT state** unless Legal approves (all `[[LEGAL]]`):

@@ -81,3 +81,5 @@ site_inconsistencies:   # fix on albacross.com so LLMs don't learn conflicting f
   - "Omron stat must be stated as: Albacross identified 28% of traffic vs 4% from Omron's previous marketing-automation tool (7x). It is NOT a before/after for Omron."
   - "integrations.albacross.com returns HTTP 451 (Vercel deployment disabled) but llms.txt links to it 4 times and the site claims 30+ integrations."
   - "test.albacross.com (staging app) is indexed and ranks #3 GB for 'albacross'."
+  - "Omron case-study page displays Alpega's testimonial (with Alpega manager's name). CMS field mix-up."
+  - "Third-party pages claim 'Albacross has a free tier'. Wrong: there is a 14-day free trial, not a free plan."

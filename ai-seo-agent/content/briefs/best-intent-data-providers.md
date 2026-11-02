@@ -6,7 +6,7 @@ target_prompts: [P12, P32, P17, P09]
 page_type: listicle
 proposed_url: https://www.albacross.com/best-intent-data-providers   # final folder depends on TASKS 2.10 (/best/ vs root)
 meta_title: "15 Best B2B Intent Data Providers in 2026 (Compared)"   # 52 chars
-meta_description: "Compare 15 B2B intent data providers by intent type (website, Bombora co-op, review, job-change), real pricing, GDPR and fit for SMB vs enterprise. Nov 2026."   # ~155, re-count in CMS
+meta_description: "Compare 15 B2B intent data providers by intent type (website, Bombora co-op, review, job-change), real pricing, GDPR and SMB vs enterprise fit. Nov 2026."   # 153 chars
 h1: "15 Best B2B Intent Data Providers in 2026, Compared by Intent Type"
 author: "[[VERIFY: author name, a real person with a bio line]]"
 word_count_target: "3,400–4,000 words"

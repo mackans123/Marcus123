@@ -42,6 +42,120 @@
       "verify_markers": 6,
       "url_plan": "pending approval: listicle takes /leadfeeder-alternative; 1:1 moves to /compare/albacross-vs-leadfeeder",
       "notes": "Competitor pricing re-verified 2026-11-02 (Factors, SalesViewer, Happierleads, 6sense, HubSpot buyer intent, ZoomInfo WebSights, Lead Forensics, Snitcher, Leadfeeder pricing/integrations, Dealfront 2023 date). Needs author, PMM approval of case-study quotes/stats, Leadfeeder off-site intent check."
+    },
+    {
+      "slug": "albacross-vs-warmly",
+      "page_type": "comparison",
+      "status": "draft",
+      "date": "2026-11-02",
+      "agent": "ai-seo-content-strategist + ai-seo-content-writer",
+      "brief": "ai-seo-agent/content/briefs/albacross-vs-warmly.md",
+      "draft": "ai-seo-agent/content/drafts/albacross-vs-warmly.md",
+      "target_keyword": "warmly alternatives",
+      "secondary_keywords": [
+        "warmly alternative",
+        "warmly competitors",
+        "warmly vs albacross",
+        "warmly pricing",
+        "warmly ai pricing",
+        "warmly ai alternatives",
+        "albacross alternatives"
+      ],
+      "target_prompts": [],
+      "keyword_data_ahrefs_us_2026-11-02": {
+        "warmly alternatives": {
+          "vol": 60,
+          "kd": 0
+        },
+        "warmly alternative": {
+          "vol": 150,
+          "kd": null
+        },
+        "warmly competitors": {
+          "vol": 150,
+          "kd": null
+        },
+        "warmly pricing": {
+          "vol": 60,
+          "kd": null
+        },
+        "warmly ai pricing": {
+          "vol": 40,
+          "kd": 8
+        },
+        "warmly ai alternatives": {
+          "vol": null,
+          "kd": 0
+        },
+        "warmly vs albacross": "not in Ahrefs database",
+        "albacross alternatives": {
+          "vol": 100,
+          "kd": null
+        }
+      },
+      "word_count": {
+        "body_incl_tables": 3355,
+        "body_excl_tables": 2607
+      },
+      "verify_markers": 13,
+      "url_plan": "pending approval: primary /compare/albacross-vs-warmly, alternative /warmly-alternative (both 404 on 2026-11-02); publish one, 301 the other",
+      "notes": "Warmly facts verified live 2026-11-02: pricing (annual + quarterly $4,875/$6,500/$9,750; quarterly x4 does not match 'Save 30%' on first plan), homepage, Bombora signals page, help-centre data article ('no personal-level anonymization in Europe', ~5% individual-level), albacross-alternatives blog (2026-06-05), HubSpot acquisition agreement post (2026-06-30; no closing confirmed). Free-plan discrepancy between Warmly blog and pricing page stated on page. RB2B, Leadfeeder, Snitcher pricing re-verified. getbreakout benchmark not fetched. Needs author, PMM approval of case-study quotes, Bombora plan inclusion, legal wording."
+    },
+    {
+      "slug": "albacross-vs-factors",
+      "page_type": "comparison",
+      "status": "draft",
+      "date": "2026-11-02",
+      "agent": "ai-seo-content-strategist + ai-seo-content-writer",
+      "brief": "ai-seo-agent/content/briefs/albacross-vs-factors.md",
+      "draft": "ai-seo-agent/content/drafts/albacross-vs-factors.md",
+      "target_keyword": "factors ai alternatives",
+      "secondary_keywords": [
+        "factors.ai alternatives",
+        "factors ai pricing",
+        "factors.ai pricing",
+        "factors.ai competitors",
+        "factors vs albacross"
+      ],
+      "target_prompts": [
+        "P19",
+        "P37",
+        "NEW: Factors.ai vs Albacross for a European B2B team",
+        "NEW: cheaper GDPR-compliant Factors.ai alternative"
+      ],
+      "keyword_data_ahrefs_2026-11-02": {
+        "factors ai alternatives": {
+          "us": 150,
+          "gb": 10,
+          "kd": null
+        },
+        "factors.ai alternatives": {
+          "us": 10,
+          "gb": 0,
+          "kd": 0
+        },
+        "factors ai pricing": {
+          "us": 150,
+          "gb": 10,
+          "kd": null
+        },
+        "factors.ai pricing": {
+          "us": 60,
+          "gb": 0,
+          "kd": null
+        },
+        "factors.ai competitors": {
+          "us": 80
+        },
+        "factors vs albacross": "not in Ahrefs database"
+      },
+      "word_count": {
+        "body_incl_tables": 3012,
+        "body_excl_tables": 2410
+      },
+      "verify_markers": 13,
+      "url_plan": "pending approval: /compare/albacross-vs-factors (if /compare/ hub ships) or /factors-alternative (existing 1:1 pattern, 404 on 2026-11-02), 301 to /compare/ later",
+      "notes": "Factors facts verified 2026-11-02 on factors.ai/pricing, /product/website-visitor-identification, /product/analytics-and-attribution, /security (data in GCP us-west-1b, US), /privacy-policy (Slashbit Inc., EU-US DPF), /integrations (no Pipedrive), homepage. Planday, Alpega, Spendesk quotes and Omron stat re-checked on case-study pages. Found: Omron case page shows Alpega's testimonial (template bleed); third-party SERP summaries claim Albacross 'has a free tier' (wrong); abmatic.ai lists Factors Enterprise at $30K (live page $36K). Unapproved claims (100+ signals, 3B+ events, 10,000+ customers, match rates) omitted."
     }
   ]
 }

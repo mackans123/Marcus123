@@ -36,7 +36,7 @@
 | 6 | Does IP-only tracking escape ePrivacy? (EDPB 2/2023) | ❌ none | ❌ none. **Open gap, and the most citable one** |
 | 7 | Company-level vs person-level: why does it matter in the EU? | ✅ FA (table), LF-WV | ◐ The newsroom covers it in 2–3 sentences. Positioning names it as a differentiator, but no page goes deep |
 | 8 | Controller vs processor, and is there a DPA? | ✅ LF-GDPR | ✅ The DPA page (rev. 2024-10-02) and help FAQ cover roles and signing via legal@. But no page sums them up, and the DPA says Albacross is also a controller for database improvement |
-| 9 | Where is data hosted, and are there transfers outside the EU? | ✅ LI (Ireland and Frankfurt, EU only), LF (Europe) | ◐ This is only in the DPA sub-processor table (AWS Ireland, MongoDB NL; Waterfall Data US; Cognism UK; OpenAI "Global"). No transfer mechanism is named |
+| 9 | Where is data hosted, and are there transfers outside the EU? | ✅ LI (Ireland and Frankfurt, EU only), LF (Europe) | ◐ Only in legal docs: the privacy policy says "servers located in Ireland", and the DPA sub-processor table lists AWS Ireland, MongoDB NL, Waterfall Data US, Cognism UK and OpenAI "Global". No transfer mechanism is named |
 | 10 | What must the privacy notice say, and how do visitors opt out? | ✅ LF-GDPR, LI (48 h opt-out) | ◐ The checklist gives notice text. No visitor opt-out process is published |
 | 11 | Does GDPR apply to non-EU (US) companies? Do CCPA or PECR apply? | ✅ LF-GDPR, FA | ◐ The newsroom names CCPA in one line |
 | 12 | Fines and enforcement risk | ✅ LF-GDPR (€20M / 4%) | ❌ |
@@ -63,10 +63,11 @@
 | P2 | /data-processing-agreement | Legal: name the transfer mechanism (SCCs/DPF), fill in the empty safeguards cells, and clarify the location of OpenAI and Bright Data | 9 | Legal task |
 
 **Contradictions in Albacross's own published material** (Legal must resolve these before the hub is written):
-- **C1. Legal basis.** The help FAQ says consent is required for the script. The newsroom says the basis is "usually legitimate interest". `facts.yaml → legal_basis` is still VERIFY.
+- **C1. Legal basis.** The help FAQ says consent is required for the script. The newsroom says the basis is "usually legitimate interest". The privacy policy (2024-10-02) uses legitimate interest for Albacross's own processing. `facts.yaml → legal_basis` is still VERIFY. The cookie lifetime also conflicts: 1 year in the checklist vs 24 months in the privacy policy.
+- **Line-by-line fixes** for /newsroom/albacross-gdpr and the ebook GDPR chapter are in `ai-seo-agent/research/gdpr-assets-refresh-audit.md`.
 - **C2. Cookies.** The checklist names two 1-year cookies, and /identify promotes first-party cookies. Sales says there are "cookieless / hybrid / consent-gated" modes (VOC), but no page says so.
 - **C3. Fingerprinting.** The help FAQ lists a "fingerprint hash" among the data processed. Competitors present "no fingerprinting" as a compliance point.
-- **C4. Hosting.** "EU hosting (AWS Ireland)" appears in the DPA sub-processor table only. The non-EEA safeguards are blank.
+- **C4. Hosting.** The privacy policy says "servers located in Ireland", and the DPA lists AWS Ireland. But no marketing page states this, and the DPA safeguards column is blank for the UK, US and "Global" sub-processors.
 - **C5. Company data.** The 2020 post says company data is not personal data. That conflicts with the DPA, whose data subjects include employees of the companies identified.
 - **C6. Script timing.** A VOC rep note records advising a prospect to load the script before consent. Legal must review this.
 - **C7. Contact consent.** The help FAQ says contacts "consented" via the data partner. Legal needs to confirm this.
