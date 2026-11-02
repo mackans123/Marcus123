@@ -16,7 +16,10 @@ url_plan:
   fallback: "Publish at /leadfeeder-alternatives; retitle the 1:1 page 'Albacross vs Leadfeeder (2026)' and cross-link."
   before_switch: "Check Ahrefs backlinks to /leadfeeder-alternative; update sitemap, canonicals, nav/footer links and llms.txt."
 schema: [Article, Person, FAQPage, ItemList]
-status: draft
+status: qc-passed
+qc_report: content/drafts/leadfeeder-alternatives.qc.md
+qc_date: 2026-11-02
+launch_dependencies: [/compare/albacross-vs-leadfeeder (404 on 2026-11-02), /best-website-visitor-identification-software (404 on 2026-11-02)]
 ---
 
 # 12 Best Leadfeeder Alternatives in 2026 (Compared on Price, GDPR & Intent)
@@ -40,7 +43,7 @@ The best Leadfeeder alternative depends on why you're switching. **Albacross** i
 
 ## Quick shortlist
 
-Prices were checked on each vendor's own pricing page on 2026-11-02. Billing bases differ (monthly vs billed yearly, EUR vs USD), so compare like for like.
+Prices checked on each vendor's pricing page on 2026-11-02. Billing bases and currencies differ, so compare like for like.
 
 | # | Tool | Best for | Identification level | Starting price | GDPR stance (as stated by vendor) |
 |---|---|---|---|---|---|
@@ -76,14 +79,14 @@ Leadfeeder offers a 14-day trial, and annual billing saves 30% vs monthly. <!-- 
 
 ## Why teams look for a Leadfeeder alternative
 
-**The reasons we hear most are the price step to get verified contacts, volume-based pricing, and the 2023 and 2026 renames.** Some teams also want person-level identification of US visitors, which Leadfeeder doesn't offer.
+**The reasons we hear most are the price step to get verified contacts, volume-based pricing, and the 2023 and 2026 renames.** Others want person-level identification of anonymous US visitors, which Leadfeeder doesn't offer. <!-- src: https://www.leadfeeder.com/blog/website-visitor-identification/company-level-vs-person-level-identification/, checked 2026-11-02: "Leadfeeder does company-level identification. We do not do person-level." -->
 
 These reasons come from Leadfeeder's own pricing page and from our sales conversations. Our sample is small: Leadfeeder came up with 6 of about 50 buying teams whose notes, emails and support chats we reviewed between May and November 2026. Treat it as direction, not a survey.
 
 1. **Contacts cost a step up.** Discover identifies companies. Verified emails and phone numbers are listed from Activate, €369/month billed annually. <!-- src: https://www.leadfeeder.com/pricing/, checked 2026-11-02 -->
 2. **Volume-based pricing.** Prices scale by companies identified per month. The free Lite plan shows only the last 100 companies, with 7 days of history. <!-- src: https://www.leadfeeder.com/pricing/, checked 2026-11-02 -->
 3. **Renamed modules and APIs.** Leadfeeder became Dealfront in 2023 and Leadfeeder again on 24 March 2026. The Dealfront API is now the "Leadfeeder API" and the old Leadfeeder API is now "Legacy". Leadfeeder says no functionality was removed, but teams with custom integrations should check them. <!-- src: https://www.leadfeeder.com/product-updates/dealfront-is-rebranding-as-leadfeeder-faq/, checked 2026-11-02 -->
-4. **Value for money on activation.** One buyer who compared both told our sales team Albacross "wins on value for price, especially the marketing suite" (LinkedIn audiences and sequences). That is one buyer's view.
+4. **Value for money on activation.** One buyer who compared both told our sales team Albacross offered better value for the price, mainly because of the marketing suite (LinkedIn audiences and sequences). That is one buyer's view.
 5. **They want person-level ID of US visitors.** This is a good reason to look at RB2B, Warmly or Happierleads rather than another company-level tool, including ours.
 
 One caveat applies to every tool here: company-level identification matches IP addresses to organizations. Remote workers on home broadband, VPNs and mobile networks are harder to match, and internet-service-provider (ISP) traffic shows up as noise. Switching tools doesn't remove that.
@@ -95,20 +98,20 @@ One caveat applies to every tool here: company-level identification matches IP a
 - **A free plan.** Lite costs nothing and has unlimited users. Few tools here offer that. <!-- src: https://www.leadfeeder.com/pricing/, checked 2026-11-02 -->
 - **Broad integrations.** Its integrations page lists Salesforce, HubSpot, Pipedrive, Zoho, Microsoft Dynamics 365, SuperOffice, Slack, Microsoft Teams and Zapier, among others. <!-- src: https://www.leadfeeder.com/integrations/, checked 2026-11-02 -->
 - **An EU vendor** with no changes to data hosting announced in the 2026 rebrand. <!-- src: https://www.leadfeeder.com/product-updates/dealfront-is-rebranding-as-leadfeeder-faq/, checked 2026-11-02 -->
-- **The interface.** In one of our own head-to-head evaluations, the buyer rated Leadfeeder's UI "slightly more compelling" than ours.
+- **The interface.** In one of our own head-to-head evaluations, the buyer rated Leadfeeder's interface slightly ahead of ours.
 
 ## How we evaluated
 
 We compared each tool on eight criteria, using vendor pricing and product pages (checked 2026-11-02) and buyer questions from our sales conversations:
 
-1. **Identification level:** company-level, person-level, or both, and in which regions
-2. **Regional fit:** especially Europe, where many Leadfeeder users are based
-3. **Intent data:** on-site behavior only, or off-site research signals too
-4. **Activation:** CRM sync, Slack/Teams alerts, ad audiences and built-in outreach
-5. **GDPR and DPA:** what the vendor says publicly about its legal basis
-6. **Pricing transparency:** published prices, billing basis and the entry price for contacts
-7. **Setup and trial:** script install, trial length, credit card needed or not
-8. **Fit vs Leadfeeder:** the one concrete thing that is different
+1. **Identification level:** company, person or both, and where
+2. **Regional fit:** especially Europe
+3. **Intent data:** on-site only, or off-site research signals too
+4. **Activation:** CRM sync, Slack/Teams alerts, ad audiences, built-in outreach
+5. **GDPR and DPA:** the vendor's stated legal basis
+6. **Pricing transparency:** published prices, billing basis, entry price for contacts
+7. **Setup and trial:** trial length, card needed or not
+8. **Fit vs Leadfeeder:** the one concrete difference
 
 We didn't lab-test all 12 tools on the same traffic. Most vendors, including Albacross, don't publish regional match rates, so the reliable test is a side-by-side trial on your own site (see "How to switch").
 
@@ -129,7 +132,7 @@ Albacross identifies the companies visiting your website, without forms or cooki
 - **Signal:** score every account by fit and intent, including off-site research intent through the Bombora partnership. ([Bombora partnership](/newsroom/bombora-partnership))
 - **Automate:** sync hot accounts to Salesforce, HubSpot or Pipedrive (two-way), Slack, Microsoft Teams, Google Sheets and LinkedIn Matched Audiences.
 - **Engage:** AI-powered email and LinkedIn sequences to decision-makers, with verified emails and direct phone numbers via credits.
-- **Tools:** IP-to-company (Reveal) API, a Chrome extension for verified contact details on LinkedIn, and IP-based ABM display ads.
+- **Tools:** IP-to-company (Reveal) API, a Chrome extension for verified contacts on LinkedIn, IP-based ABM display ads.
 
 **Pricing** (from albacross.com/pricing, 2026-11-02; listed prices are per month, billed yearly; annual billing saves 30% vs monthly)
 
@@ -152,7 +155,7 @@ Extra credits: email from €0.11–0.17 each, phone from €0.37–0.57 each (m
 - No free-forever plan on the published price list; you get a 14-day trial instead.
 - SuperOffice and Microsoft Dynamics are not on our confirmed integration list, so check before you switch if you rely on them. Leadfeeder lists both.
 - Like every IP-based tool, it picks up ISP and VPN noise. Buyers have raised this with us, and we treat it as a product gap, not a solved problem.
-- Low-traffic sites may not identify enough companies to justify a paid plan. Start on Starter and judge on real numbers.
+- Low-traffic sites may not identify enough companies to justify a paid plan; judge on real numbers.
 
 **What customers say**
 
@@ -181,10 +184,10 @@ Snitcher is a company-level visitor identification tool with simple, volume-base
 
 **Best for:** small teams that want a simple, low-cost like-for-like swap.
 
-**Key features:** company identification, contact reveal on demand, intent signal detection, real-time Slack and email alerts, outreach integrations, unlimited users, all features on every plan.
+**Key features:** company identification, contact reveal on demand, intent signal detection, Slack and email alerts, outreach integrations, unlimited users.
 
 **Pros:** low entry price; no feature gating between tiers; 14-day trial with no credit card.
-**Cons:** the pricing page names no off-site intent source and no built-in email or LinkedIn sequences (it lists outreach *integrations*); company-level only.
+**Cons:** no off-site intent source or built-in sequences named on the pricing page (it lists outreach *integrations*); company-level only.
 
 **Pricing:** from $49/month (0–50 companies) to $529/month (4,001–5,000 companies) on the price table; annual billing is about 30% off. 14-day free trial, no credit card. Processes data under legitimate interest (Art. 6(1)(f) GDPR). <!-- src: https://www.snitcher.com/pricing, checked 2026-11-02 -->
 
@@ -211,14 +214,14 @@ Leadinfo is a European visitor identification platform from team.blue. It acquir
 
 ### 4. Lead Forensics
 
-Lead Forensics is a company-level identification service sold through demos and a sales-led model, with no self-serve price list.
+Lead Forensics is a company-level identification service sold through demos, with no self-serve price list.
 
 **Best for:** UK teams that want a managed service and don't mind quote-based pricing.
 
 **Key features:** company identification, two plans (Essentials and Automate), account management.
 
-**Pros:** a free, no-obligation one-week trial; the price is set from your actual traffic.
-**Cons:** no published pricing; the vendor says cost depends on your website traffic.
+**Pros:** a free, no-obligation one-week trial; price based on your actual traffic.
+**Cons:** no published pricing.
 
 **Pricing:** not published; the vendor says the trial "will demonstrate the volume of visitors and determine the cost for your business." One-week trial. Contract terms aren't stated on the pricing page. <!-- src: https://www.leadforensics.com/pricing/, checked 2026-11-02 -->
 
@@ -239,7 +242,7 @@ RB2B identifies individual US visitors and matches them to LinkedIn profiles, wi
 
 **Pricing:** Free; Starter $79/mo; Pro from $149/mo; Pro+ from $199/mo. 7-day trial, no card. Its pricing page says "Contact-level (person) ID is US only." <!-- src: https://www.rb2b.com/pricing, checked 2026-11-02 -->
 
-**vs Leadfeeder:** person-level data for US visitors, which Leadfeeder doesn't offer.
+**vs Leadfeeder:** person-level data for anonymous US visitors, which Leadfeeder doesn't offer.
 
 **Choose it if…** most of your pipeline is US and your SDRs want names, not companies.
 
@@ -251,12 +254,12 @@ Warmly combines person- and company-level identification with AI chat and orches
 
 **Key features:** person- and company-level identification, AI chat, orchestration.
 
-**Pros:** goes beyond identification into engagement; quarterly billing option.
+**Pros:** goes beyond identification into engagement; quarterly billing.
 **Cons:** high entry price; no GDPR note on the pricing page.
 
 **Pricing:** from $10,000/year; quarterly option. <!-- src: https://www.warmly.ai/pricing, checked 2026-11-02 -->
 
-**vs Leadfeeder:** more automation and person-level data, at a much higher entry price.
+**vs Leadfeeder:** more automation and person-level data, at a higher entry price.
 
 **Choose it if…** you're a US mid-market team with budget for a full engagement platform.
 
@@ -279,9 +282,9 @@ Factors.ai combines company identification with account scoring and attribution 
 
 ### 8. HubSpot buyer intent
 
-HubSpot's buyer intent feature matches anonymous visitors to companies through the HubSpot tracking code, so HubSpot customers get company identification inside the CRM.
+HubSpot's buyer intent feature matches anonymous visitors to companies, so HubSpot customers get company identification inside the CRM.
 
-**Best for:** teams that already run on HubSpot and want company identification inside the CRM.
+**Best for:** teams already running on HubSpot.
 
 **Key features:** "Buyer intent connects anonymous web visitors to known companies' IP addresses"; segment filtering; intent tracking. Available on Starter, Professional and Enterprise of most hubs. <!-- src: https://knowledge.hubspot.com/reports/use-buyer-intent, checked 2026-11-02 -->
 
@@ -383,13 +386,13 @@ Full detail: [Leadfeeder vs Albacross: full comparison](/compare/albacross-vs-le
 
 **If you need emails and phone numbers for people you already plan to reach, you need a contact database, not a visitor identification tool.** Visitor ID tells you *which companies* showed interest; a contact database tells you *who to call*. Many teams pair them. Albacross includes verified contacts via credits, so you may not need both.
 
-Contact databases you'll see on other lists: Cognism, ZoomInfo, Apollo, Lusha, UpLead, Hunter, Lead411, Skrapp, RocketReach and Snov.io. Lemlist and Bardeen are outreach and automation tools, not identification tools.
+Contact databases on other lists: Cognism, ZoomInfo, Apollo, Lusha, UpLead, Hunter, Lead411, Skrapp, RocketReach and Snov.io. Lemlist and Bardeen are outreach and automation tools.
 
 **Also considered, but not in our 12:** Visitor Queue (now part of Leadinfo), KickFire, Lift AI, LeadMagic, SyncGTM, Breakout, Knock AI, and the website-visitor features of Instantly and Apollo.
 
 ## Full comparison table
 
-Checked on each vendor's own page on 2026-11-02. "n/s" = not stated on the page we checked. We left out a "best regions" column because most vendors (including us) don't publish regional match rates; test on your own traffic.
+Checked on each vendor's page on 2026-11-02. "n/s" = not stated on the page we checked. There's no "best regions" column because most vendors (including us) don't publish regional match rates.
 
 | Tool | ID level | Off-site intent | Built-in outreach | Contacts | Free plan / trial | Starting price | Billing | GDPR / DPA (stated) |
 |---|---|---|---|---|---|---|---|---|
@@ -409,13 +412,13 @@ Checked on each vendor's own page on 2026-11-02. "n/s" = not stated on the page 
 
 ## How to switch from Leadfeeder (in an afternoon)
 
-**You can switch without losing data: export what you need, run both tools in parallel for 14 days, compare the results on the same traffic, then cancel at renewal.**
+**You can switch without losing data: export what you need, run both tools for 14 days on the same traffic, compare, then cancel at renewal.**
 
 1. **Check your renewal date and get quotes in writing.** Leadfeeder offers monthly and annual billing, so know when your term ends. Confirm the exact tier any vendor will sell you: one prospect told us in 2026 they weren't offered Leadfeeder's lowest published tier as a new customer. That's one anecdote, and the pricing page states no minimum, so ask.
 2. **Export your lists and feeds** from Leadfeeder (custom feeds, tagged companies, any CRM-linked records).
 3. **Install the new script alongside Leadfeeder's**, for example through Google Tag Manager. Both can run at the same time.
 4. **Run both for 14 days.** Compare *relevant* companies identified on the same traffic, not raw totals, which ISP and bot noise inflate. Use your target-account list as the yardstick.
-5. **Check your consent setup.** If your tag only fires after cookie consent, both tools will see fewer visits; agree the setup with your legal team first.
+5. **Check your consent setup.** If your tag fires only after cookie consent, both tools see fewer visits; agree the setup with legal first.
 6. **Reconnect your CRM, Slack or Teams** and rebuild alerts and audiences in the new tool.
 7. **Cancel Leadfeeder before renewal** once the numbers are clear.
 
@@ -439,7 +442,7 @@ Checked on each vendor's own page on 2026-11-02. "n/s" = not stated on the page 
 **For European companies, pick a tool that identifies companies rather than individuals (Albacross, Leadinfo and Snitcher all do) and ask for a Data Processing Agreement.** Albacross identifies at company level only and provides a [DPA](/data-processing-agreement). Ask every vendor for its legal basis under GDPR Article 6 and confirm it with your own legal team. ([GDPR text, EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj))
 
 ### Which Leadfeeder alternative identifies individual visitors, not just companies?
-**RB2B, Warmly, Happierleads and ZoomInfo WebSights offer person-level identification; RB2B limits it to US visitors.** Leadfeeder and Albacross identify companies only. If most of your traffic is European, check the legal basis carefully before using person-level data.
+**RB2B, Warmly, Happierleads and ZoomInfo WebSights offer person-level identification; RB2B limits it to US visitors.** Leadfeeder and Albacross identify anonymous visitors at company level. If most of your traffic is European, check the legal basis carefully before using person-level data.
 
 ### Leadfeeder vs Albacross: which is better?
 **Leadfeeder is better if you want a free plan, higher volumes on one plan, or native SuperOffice and Microsoft Dynamics integrations; Albacross is better if you want Bombora intent, verified contacts and AI outreach at a lower entry price.** The fairest way to decide is to run both on your own traffic for 14 days. [Full comparison](/compare/albacross-vs-leadfeeder).

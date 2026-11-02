@@ -46,7 +46,7 @@
    - ⚠️ **The homepage and pricing page have no Organization / SoftwareApplication schema.** The homepage has only 2 H2s.
    - ⚠️ **App, login and management subdomains are indexed** (`app.albacross.com/account/integration`, `management.albacross.com`). The app subdomain serves no robots.txt.
    - ⚠️ The sitemap covers only 158 URLs, and no blog or listicle section exists.
-8. **Measurement gap:** the Ahrefs plan lacks the **Brand Radar** add-on (calls for ChatGPT and AI Overviews returned "Missing addon"). Albacross has no prompt-level AI share-of-voice tracking today.
+8. **AI visibility (Peec AI, 2026-10-04 → 11-02):** Albacross trails Leadfeeder on every engine. ChatGPT 41.6% vs 50.4%, **Google AI Overview 27.3% vs 50.5%** (the widest gap) and Gemini 31.0% vs 51.2%. Albacross does lead on Gemini share of voice (31.8%), with win rate and position close to Leadfeeder's. Intent-data and ABM listicles that name Leadfeeder and Factors but not Albacross are among the most-cited sources. See `state/peec/`.
 
 ## 2. What actually drives AI visibility (evidence summary)
 
@@ -82,7 +82,7 @@ Positioning should be consistent everywhere: *company-level, GDPR-first, EU-stro
 
 | KPI | Baseline (Oct 2026) | 90-day target | 6-month target |
 |---|---|---|---|
-| AI share of voice on 40 money prompts | not measured | baseline +10 pts | named in 50%+ of category prompts |
+| AI visibility vs Leadfeeder (Peec, 30-day) | ChatGPT 41.6% vs 50.4% · AI Overview 27.3% vs 50.5% · Gemini 31.0% vs 51.2% | close ChatGPT gap; AIO ≥40% | ≥ Leadfeeder on all 3 engines |
 | Non-branded organic clicks / mo | ~800 (est.) | 2× | 4× |
 | Money keywords in top 3 (US + UK + DE + SE) | ~2 | 15 | 40 |
 | AI-referred sessions / mo | ~106 | 250 | 500 |

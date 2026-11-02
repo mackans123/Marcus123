@@ -20,6 +20,7 @@ Every agent in `.claude/agents/ai-seo-*.md` reads this file first.
 | Technical audit | `ai-seo-agent/research/tech-audit.md` |
 
 ## Connected tools (MCP)
+- **Peec AI**: the official AI-visibility tracker (ChatGPT, Google AI Overview, Gemini). It has no API here, so exports are saved in `ai-seo-agent/state/peec/`. Compare month-on-month on the same 30-day basis and the same prompt set. Next re-run: 2026-12-02.
 - **Ahrefs**: rankings, keywords, SERPs, backlinks, site audit. Always call `mcp__Ahrefs__doc` for a tool before its first use, and use `mode=subdomains` for domains. Brand Radar is NOT in the plan, so don't call `brand-radar-*`.
 - **PostHog**: web analytics and AI referral sessions (`sessions.$entry_referring_domain`, `$entry_utm_source`).
 - **Attio**: CRM, call recordings, notes, emails (for voice-of-customer research).
