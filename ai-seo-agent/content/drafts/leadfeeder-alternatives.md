@@ -45,7 +45,7 @@ Prices were checked on each vendor's own pricing page on 2026-11-02. Billing bas
 | # | Tool | Best for | Identification level | Starting price | GDPR stance (as stated by vendor) |
 |---|---|---|---|---|---|
 | 1 | **Albacross** | European and EU-selling B2B teams that want GDPR-safe, company-level visitor identification with intent scoring and built-in outreach, at transparent SMB/mid-market pricing | Company-level, plus verified contacts via credits | €59/mo billed yearly | Company-level only; DPA available |
-| 2 | Snitcher | Small teams wanting a simple, low-cost like-for-like swap | Company-level (contact reveal on demand) | $49/mo billed monthly | Legitimate interest basis |
+| 2 | Snitcher | Small teams wanting a simple, low-cost like-for-like swap | Company-level (contact reveal on demand) | $49/mo (annual ~30% off) | Legitimate interest, Art. 6(1)(f) |
 | 3 | Leadinfo | Benelux and EU SMBs; former Visitor Queue users | Company-level | €69/mo (billing basis not stated) | GDPR Art. 6(1)(f) legitimate interest |
 | 4 | Lead Forensics | UK teams that want a managed, account-managed service | Company-level | Quote only | "GDPR compliant" badge; compliance page |
 | 5 | RB2B | US-focused SDR teams wanting person-level profiles | Person-level (US only); company-level elsewhere | Free; paid from $79/mo | Person-level ID limited to US |
@@ -182,12 +182,12 @@ Snitcher is a company-level visitor identification tool with simple, volume-base
 
 **Best for:** small teams that want a simple, low-cost like-for-like swap.
 
-**Key features:** company identification, contact reveal on demand, unlimited users, all features on every plan.
+**Key features:** company identification, contact reveal on demand, intent signal detection, real-time Slack and email alerts, outreach integrations, unlimited users, all features on every plan.
 
-**Pros:** low entry price; no feature gating between tiers; 14-day trial.
-**Cons:** no off-site intent stated on its pricing page; built-in outreach isn't part of the plans listed.
+**Pros:** low entry price; no feature gating between tiers; 14-day trial with no credit card.
+**Cons:** the pricing page names no off-site intent source and no built-in email or LinkedIn sequences (it lists outreach *integrations*); company-level only.
 
-**Pricing:** from $49/month (0–50 companies) to $529/month (4,001–5,000 companies), billed monthly; about 30% off with annual billing. 14-day trial. States a legitimate-interest basis. <!-- src: https://www.snitcher.com/pricing, checked 2026-11-02 -->
+**Pricing:** from $49/month (0–50 companies) to $529/month (4,001–5,000 companies) on the price table; annual billing is about 30% off. 14-day free trial, no credit card. Processes data under legitimate interest (Art. 6(1)(f) GDPR). <!-- src: https://www.snitcher.com/pricing, checked 2026-11-02 -->
 
 **vs Leadfeeder:** cheaper entry for company identification and no feature tiers. ([Snitcher alternatives](/snitcher-alternative))
 
@@ -206,26 +206,26 @@ Leadinfo is a European visitor identification platform from team.blue. It acquir
 
 **Pricing:** Starter €69, Scale €159, Pro €359 (headline prices; billing basis not stated). 14-day trial. <!-- src: https://www.leadinfo.com/en/pricing/, checked 2026-11-02 -->
 
-**vs Leadfeeder:** a lower entry price than Discover's monthly price and a strong Benelux focus. ([Leadinfo alternatives](/leadinfo-alternative))
+**vs Leadfeeder:** a similar entry price for company identification and a strong Benelux focus. ([Leadinfo alternatives](/leadinfo-alternative))
 
 **Choose it if…** you're a Benelux SMB that wants a local vendor.
 
 ### 4. Lead Forensics
 
-Lead Forensics is a UK-based company-level identification service sold with a sales-led, account-managed model.
+Lead Forensics is a company-level identification service sold through demos and a sales-led model, with no self-serve price list.
 
 **Best for:** UK teams that want a managed service and don't mind quote-based pricing.
 
 **Key features:** company identification, two plans (Essentials and Automate), account management.
 
-**Pros:** hands-on onboarding; a free one-week trial.
+**Pros:** a free, no-obligation one-week trial; the price is set from your actual traffic.
 **Cons:** no published pricing. Buyers we spoke to mentioned manual page tagging and per-site pricing.
 
 **Pricing:** not published; the vendor says the trial "will demonstrate the volume of visitors and determine the cost for your business." One-week trial. Contract terms aren't stated on the pricing page. <!-- src: https://www.leadforensics.com/pricing/, checked 2026-11-02 -->
 
 **vs Leadfeeder:** a more managed service, but less price transparency. ([Lead Forensics alternatives](/lead-forensics-alternative))
 
-**Choose it if…** you're UK-based and want a vendor to run it with you.
+**Choose it if…** you're UK-based and prefer a sales-led vendor relationship over self-serve.
 
 ### 5. RB2B
 
@@ -270,7 +270,7 @@ Factors.ai combines company identification with account scoring and attribution 
 **Key features:** company identification; account scoring and engagement tracking (Growth); 1st, 2nd and 3rd party intent with predictive scoring (Enterprise).
 
 **Pros:** a no-card trial on Lite; analytics depth.
-**Cons:** after Lite, plans are annual only and step up quickly; prices are shown in "$" without a stated currency.
+**Cons:** after Lite, prices are shown as annual figures and step up quickly; prices are shown in "$" without a stated currency.
 
 **Pricing:** Lite $199/month after trial (up to 1,500 companies/month); Basic $6K/year (3,000); Growth $20K/year (8,000); Enterprise from $36K/year. <!-- src: https://www.factors.ai/pricing, checked 2026-11-02 -->
 
@@ -278,9 +278,9 @@ Factors.ai combines company identification with account scoring and attribution 
 
 **Choose it if…** marketing attribution matters as much as identification.
 
-### 8. HubSpot buyer intent (formerly Breeze Intelligence / Clearbit)
+### 8. HubSpot buyer intent (formerly Breeze Intelligence)
 
-HubSpot's buyer intent feature matches anonymous visitors to companies through the HubSpot tracking code. It replaced the standalone Clearbit products after HubSpot's acquisition.
+HubSpot's buyer intent feature matches anonymous visitors to companies through the HubSpot tracking code, so HubSpot customers get company identification inside the CRM.
 
 **Best for:** teams that already run on HubSpot and want company identification inside the CRM.
 
@@ -398,7 +398,7 @@ Checked on each vendor's own page on 2026-11-02. "n/s" = not stated on the page 
 |---|---|---|---|---|---|---|---|---|
 | **Albacross** | Company | Yes (Bombora) | Yes: AI email + LinkedIn | Credits from Starter | 14-day trial, no card | €59/mo | Billed yearly | Company-level; DPA |
 | Leadfeeder (ref.) | Company | Intent filter; source n/s | n/s | From Activate | Free Lite; 14-day trial | €79/mo | Billed annually | EU vendor |
-| Snitcher | Company | n/s | n/s | On demand | 14-day trial | $49/mo | Monthly | Legitimate interest |
+| Snitcher | Company | Intent signals; source n/s | Integrations only | On demand | 14-day trial, no card | $49/mo | Annual ~30% off | Art. 6(1)(f) |
 | Leadinfo | Company | n/s | n/s | n/s | 14-day trial | €69 | n/s | Art. 6(1)(f) |
 | Lead Forensics | Company | n/s | n/s | n/s | 1-week trial | Quote | n/s | Badge only |
 | RB2B | Person (US) + company | n/s | n/s | Person profiles (US) | Free plan; 7-day trial | $79/mo | n/s | US-only person ID |
@@ -414,7 +414,7 @@ Checked on each vendor's own page on 2026-11-02. "n/s" = not stated on the page 
 
 **You can switch without losing data: export what you need, run both tools in parallel for 14 days, compare the results on the same traffic, then cancel at renewal.**
 
-1. **Check your renewal date.** Leadfeeder bills monthly or annually; annual contracts usually run to term.
+1. **Check your renewal date.** Leadfeeder offers monthly and annual billing, so know when your current term ends.
 2. **Export your lists and feeds** from Leadfeeder (custom feeds, tagged companies, any CRM-linked records).
 3. **Install the new script alongside Leadfeeder's**, for example through Google Tag Manager. Both can run at the same time.
 4. **Run both for 14 days.** Compare the number of *relevant* companies each identifies on the same traffic, not just raw totals; ISP and bot noise inflate totals. Use a list of your target accounts as the yardstick, as the buyer in the 14-of-18 trial above did.

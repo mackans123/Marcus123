@@ -1,1 +1,25 @@
-{"entries": []}
+{
+  "entries": [
+    {
+      "slug": "best-website-visitor-identification-software",
+      "page_type": "listicle",
+      "target_keyword": "website visitor identification software",
+      "target_prompts": [
+        "P01",
+        "P02",
+        "P03",
+        "P26",
+        "P31",
+        "P33"
+      ],
+      "brief": "ai-seo-agent/content/briefs/best-website-visitor-identification-software.md",
+      "draft": "ai-seo-agent/content/drafts/best-website-visitor-identification-software.md",
+      "status": "draft",
+      "agent": "ai-seo-content-writer",
+      "date": "2026-11-02",
+      "word_count_body": 6140,
+      "verify_markers": 75,
+      "notes": "H1 says 'Compared', not 'Tested' (no side-by-side test run). Positioning blocks used verbatim. Competitor prices re-verified 2026-11-02: Factors, Happierleads, SalesViewer, Apollo, Instantly, ZoomInfo, 6sense, Demandbase, Leadfeeder, RB2B, Leadinfo. Breeze Intelligence pricing unverifiable (official pages 404). Over the brief's 4,500-5,200 word target; QC may trim."
+    }
+  ]
+}
