@@ -1,0 +1,939 @@
+{
+  "week": "2026-W45",
+  "baseline": true,
+  "generated_at": "2026-11-02",
+  "previous_snapshot": null,
+  "organic": {
+    "source": "Ahrefs site-explorer-metrics, mode=subdomains, date=2026-10-31",
+    "domain_rating": 75,
+    "traffic": 2201,
+    "keywords": 49,
+    "keywords_by_country": {
+      "US": 22,
+      "GB": 6,
+      "DE": 3,
+      "SE": 1
+    },
+    "competitors": {
+      "rb2b.com": {
+        "traffic": 8040,
+        "keywords": 299
+      },
+      "leadfeeder.com": {
+        "traffic": 35761,
+        "keywords": 3015
+      },
+      "leadinfo.com": {
+        "traffic": 18290,
+        "keywords": 896
+      },
+      "snitcher.com": {
+        "traffic": 1151,
+        "keywords": 41
+      },
+      "warmly.ai": {
+        "traffic": 6116,
+        "keywords": 432,
+        "keywords_top3": 170
+      },
+      "leadforensics.com": {
+        "traffic": 7930,
+        "keywords": 728,
+        "keywords_top3": 326
+      }
+    },
+    "notable_rankings": [
+      {
+        "keyword": "albacross",
+        "country": "GB",
+        "position": 3,
+        "url": "https://test.albacross.com/",
+        "issue": "test subdomain indexed and ranking for brand"
+      },
+      {
+        "keyword": "albacross",
+        "country": "DE",
+        "position": 1,
+        "url": "https://app.albacross.com/account/integration",
+        "issue": "app subdomain ranking for brand (TASKS 2.2)"
+      },
+      {
+        "keyword": "leads generation",
+        "country": "GB",
+        "position": 1,
+        "url": "https://albacross.com/newsroom/what-is-lead-generation/?utm_source=Blog&utm_medium=FurtherReading",
+        "issue": "UTM URL indexed (TASKS 2.1)"
+      },
+      {
+        "keyword": "albacross pricing",
+        "country": "US",
+        "position": 1,
+        "url": "https://www.albacross.com/account-based-marketing",
+        "issue": "brand pricing query lands on /account-based-marketing, not /pricing"
+      },
+      {
+        "keyword": "website visitor tracking",
+        "country": "GB",
+        "position": 1,
+        "url": "https://www.albacross.com/newsroom/website-visitor-tracking",
+        "issue": null
+      },
+      {
+        "keyword": "how to see who visited your website",
+        "country": "US",
+        "position": 1,
+        "url": "https://www.albacross.com/newsroom/website-visitor-tracking",
+        "issue": null
+      }
+    ]
+  },
+  "money_keywords": [
+    {
+      "keyword": "website visitor identification",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "leadfeeder alternative",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "identify website visitors",
+      "priority": "P1",
+      "position": 5,
+      "url": "https://www.albacross.com/newsroom/website-visitor-tracking",
+      "by_country": {
+        "US": 5,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "leadfeeder alternatives",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "account based marketing tools",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "website visitor tracking software",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "anonymous visitor identification",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "website visitor identification software",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "b2b website visitor identification",
+      "priority": "P1",
+      "position": 5,
+      "url": "https://www.albacross.com/newsroom/how-to-identify-website-visitors",
+      "by_country": {
+        "US": 5,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "rb2b pricing",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "clearbit alternatives",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "b2b intent data providers",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "leadfeeder pricing",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "rb2b alternatives",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "b2b website visitor tracking",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "6sense alternatives",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "leadinfo alternatives",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "intent data tools",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "ip to company api",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "albacross alternatives",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "dealfront alternatives",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "lead forensics alternatives",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "reverse ip lookup api",
+      "priority": "P3",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "warmly alternatives",
+      "priority": "P3",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "leadfeeder vs albacross",
+      "priority": "P1",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "best intent data providers",
+      "priority": "P2",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    },
+    {
+      "keyword": "snitcher alternatives",
+      "priority": "P3",
+      "position": null,
+      "url": null,
+      "by_country": {
+        "US": null,
+        "GB": null,
+        "DE": null,
+        "SE": null
+      }
+    }
+  ],
+  "money_keywords_summary": {
+    "total": 27,
+    "ranking_top100_any_market": 2,
+    "top10": 2
+  },
+  "ai_sessions": {
+    "source": "PostHog sessions table; $entry_referring_domain or $entry_utm_source matches chatgpt|openai|perplexity|claude|gemini|copilot|edgeservices|grok|deepseek|meta.ai; weeks start Monday (UTC)",
+    "window": "2026-09-07 to 2026-11-01",
+    "total": 208,
+    "last_week": 30,
+    "by_engine": {
+      "chatgpt": 192,
+      "gemini": 9,
+      "perplexity": 7,
+      "claude": 0,
+      "copilot": 0,
+      "grok": 0,
+      "deepseek": 0,
+      "meta_ai": 0
+    },
+    "weekly": [
+      {
+        "week_start": "2026-09-07",
+        "ai_sessions": 20,
+        "by_engine": {
+          "chatgpt": 18,
+          "gemini": 2,
+          "perplexity": 0
+        },
+        "all_sessions": 2027,
+        "ai_share_pct": 0.99
+      },
+      {
+        "week_start": "2026-09-14",
+        "ai_sessions": 45,
+        "by_engine": {
+          "chatgpt": 45,
+          "gemini": 0,
+          "perplexity": 0
+        },
+        "all_sessions": 1725,
+        "ai_share_pct": 2.61
+      },
+      {
+        "week_start": "2026-09-21",
+        "ai_sessions": 27,
+        "by_engine": {
+          "chatgpt": 27,
+          "gemini": 0,
+          "perplexity": 0
+        },
+        "all_sessions": 1890,
+        "ai_share_pct": 1.43
+      },
+      {
+        "week_start": "2026-09-28",
+        "ai_sessions": 14,
+        "by_engine": {
+          "chatgpt": 12,
+          "gemini": 1,
+          "perplexity": 1
+        },
+        "all_sessions": 1830,
+        "ai_share_pct": 0.77
+      },
+      {
+        "week_start": "2026-10-05",
+        "ai_sessions": 14,
+        "by_engine": {
+          "chatgpt": 11,
+          "gemini": 1,
+          "perplexity": 2
+        },
+        "all_sessions": 2532,
+        "ai_share_pct": 0.55
+      },
+      {
+        "week_start": "2026-10-12",
+        "ai_sessions": 18,
+        "by_engine": {
+          "chatgpt": 17,
+          "gemini": 0,
+          "perplexity": 1
+        },
+        "all_sessions": 2643,
+        "ai_share_pct": 0.68
+      },
+      {
+        "week_start": "2026-10-19",
+        "ai_sessions": 40,
+        "by_engine": {
+          "chatgpt": 34,
+          "gemini": 4,
+          "perplexity": 2
+        },
+        "all_sessions": 2581,
+        "ai_share_pct": 1.55
+      },
+      {
+        "week_start": "2026-10-26",
+        "ai_sessions": 30,
+        "by_engine": {
+          "chatgpt": 28,
+          "gemini": 1,
+          "perplexity": 1
+        },
+        "all_sessions": 2277,
+        "ai_share_pct": 1.32
+      }
+    ],
+    "by_landing_page": [
+      {
+        "path": "/",
+        "sessions_8w": 80,
+        "sessions_last_week": 8
+      },
+      {
+        "path": "/data-api",
+        "sessions_8w": 35,
+        "sessions_last_week": 0
+      },
+      {
+        "path": "/register",
+        "sessions_8w": 34,
+        "sessions_last_week": 15
+      },
+      {
+        "path": "/pricing",
+        "sessions_8w": 27,
+        "sessions_last_week": 4
+      },
+      {
+        "path": "/gain-insight",
+        "sessions_8w": 4,
+        "sessions_last_week": 0
+      },
+      {
+        "path": "/ip-to-company-api",
+        "sessions_8w": 4,
+        "sessions_last_week": 0
+      },
+      {
+        "path": "/customer-stories/turn-energy",
+        "sessions_8w": 4,
+        "sessions_last_week": 0
+      },
+      {
+        "path": "/privacy-policy",
+        "sessions_8w": 2,
+        "sessions_last_week": 0
+      },
+      {
+        "path": "/chrome-plugin",
+        "sessions_8w": 2,
+        "sessions_last_week": 0
+      },
+      {
+        "path": "/newsroom/account-based-marketing-books",
+        "sessions_8w": 2,
+        "sessions_last_week": 0
+      },
+      {
+        "path": "/newsroom/bombora-partnership",
+        "sessions_8w": 2,
+        "sessions_last_week": 0
+      },
+      {
+        "path": "/offers-linkedin",
+        "sessions_8w": 1,
+        "sessions_last_week": 1
+      },
+      {
+        "path": "/customer-stories/reply",
+        "sessions_8w": 1,
+        "sessions_last_week": 1
+      },
+      {
+        "path": "/newsroom/how-to-identify-website-visitors",
+        "sessions_8w": 1,
+        "sessions_last_week": 1
+      },
+      {
+        "path": "(9 other pages, 1 session each)",
+        "sessions_8w": 9,
+        "sessions_last_week": 0
+      }
+    ],
+    "monthly_context": {
+      "2026-07": {
+        "ai": 25,
+        "all": 3702
+      },
+      "2026-08": {
+        "ai": 65,
+        "all": 7962
+      },
+      "2026-09": {
+        "ai": 114,
+        "all": 8089
+      },
+      "2026-10": {
+        "ai": 106,
+        "all": 10732
+      }
+    },
+    "conversions": {
+      "window": "2026-09-07 to 2026-11-01",
+      "method": "sessions containing the event, AI sessions vs all sessions (all sessions = 17,505)",
+      "events": {
+        "NewSignup": {
+          "ai_sessions": 6,
+          "all_sessions": 136,
+          "ai_rate_pct": 2.88,
+          "site_rate_pct": 0.78
+        },
+        "book_demo_form_submitted": {
+          "ai_sessions": 2,
+          "all_sessions": 26,
+          "ai_rate_pct": 0.96,
+          "site_rate_pct": 0.15
+        },
+        "book_demo_email_entered": {
+          "ai_sessions": 3,
+          "all_sessions": 20
+        },
+        "MeetingBooked": {
+          "ai_sessions": 1,
+          "all_sessions": 28
+        },
+        "book_demo_meeting_booked": {
+          "ai_sessions": 1,
+          "all_sessions": 10
+        }
+      },
+      "caveat": "Small numbers; 34 of 208 AI sessions entered on /register, so some may be existing users or app-signup flows. Signup events fired in a different session (e.g. app subdomain) are not attributed."
+    }
+  },
+  "prompt_checks_method": "PROXY: WebSearch (US) results for the prompt text on 2026-11-02. NOT real LLM share of voice; no prompt tracker is in place (TASKS 1.1).",
+  "prompt_checks": [
+    {
+      "id": "P01",
+      "prompt": "What are the best website visitor identification tools for B2B companies?",
+      "albacross_present": true,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Leadfeeder",
+        "RB2B",
+        "Warmly",
+        "Lead Forensics",
+        "Leadinfo",
+        "Albacross",
+        "6sense",
+        "ZoomInfo WebSights",
+        "Vector",
+        "Snitcher",
+        "Abmatic AI",
+        "Dealfront",
+        "Factors.ai",
+        "MarketBetter"
+      ],
+      "sources": [
+        "https://www.leadfeeder.com/blog/website-visitor-identification/best-visitor-identification-software/",
+        "https://blog.abmatic.ai/best-visitor-identification-software-2026",
+        "https://guideflow.com/blog/visitor-identification-software",
+        "https://bitscale.ai/blogs/best-b2b-website-visitor-identification-tools",
+        "https://marketbetter.ai/blog/best-website-visitor-identification-tools-2026/",
+        "https://pipeline.zoominfo.com/sales/website-visitor-identification-tools"
+      ],
+      "note": "Albacross named only via Leadfeeder's own list; Abmatic dominates results with ~6 URLs"
+    },
+    {
+      "id": "P02",
+      "prompt": "Which tools show me which companies visit my website?",
+      "albacross_present": true,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Leadfeeder",
+        "Leadinfo",
+        "Albacross",
+        "Clearbit",
+        "Kwanzoo",
+        "6sense",
+        "Demandbase",
+        "Lusha",
+        "HubSpot",
+        "Visiblee",
+        "Happierleads",
+        "Snitcher"
+      ],
+      "sources": [
+        "https://www.leadinfo.com/en/blog/how-can-you-see-who-visits-your-website/",
+        "https://help.leadfeeder.com/en/articles/13922306-introduction-to-leadfeeder",
+        "https://www.kwanzoo.com/glossary/how-to-see-who-is-visiting-your-website",
+        "https://docs.lusha.com/user-guide/lushas-api/website-visits-api",
+        "https://mkt.opensend.com/post/can-you-see-who-visits-your-website"
+      ],
+      "note": "Mentioned in third-party text only"
+    },
+    {
+      "id": "P03",
+      "prompt": "Best GDPR-compliant website visitor identification software for European companies",
+      "albacross_present": false,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Leadinfo",
+        "Dealfront",
+        "SalesViewer",
+        "Cognism",
+        "Happierleads"
+      ],
+      "sources": [
+        "https://www.leadinfo.com/en/blog/which-tools-are-best-for-identifying-website-visitors/",
+        "https://www.leadinfo.com/en/blog/website-visitor-identification-and-gdpr-whats-allowed-and-whats-not/",
+        "https://happierleads.com/gdpr-compliant-website-visitor-tracking",
+        "https://europeanpurpose.com/tool/salesviewer",
+        "https://www.captiwate.com/compare-list/cognism"
+      ],
+      "note": "Albacross's core positioning prompt; Leadinfo owns it with ~10 URLs"
+    },
+    {
+      "id": "P04",
+      "prompt": "What's the best Leadfeeder alternative?",
+      "albacross_present": true,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Clearbit/HubSpot Breeze",
+        "RB2B",
+        "Albacross",
+        "Snitcher",
+        "Warmly",
+        "Lead Forensics",
+        "Leadpipe",
+        "Prospeo",
+        "SMARTe"
+      ],
+      "sources": [
+        "https://g2.com/products/dealfront-group-gmbh-leadfeeder/competitors/alternatives",
+        "https://hackceleration.com/labs/alternatives/leadfeeder-alternatives",
+        "https://www.softwares.com/alternatives/leadfeeder",
+        "https://www.warmly.ai/compare/leadfeeder-alternatives-for-marketers",
+        "https://rb2b.com/learn/leadfeeder-alternatives",
+        "https://prospeo.io/s/leadfeeder-alternatives",
+        "https://ddiy.co/best-leadfeeder-alternatives/"
+      ],
+      "note": "Described as 'useful if you sell into Europe'; albacross.com/leadfeeder-alternative not in results"
+    },
+    {
+      "id": "P06",
+      "prompt": "Best RB2B alternatives that work in Europe / are GDPR compliant",
+      "albacross_present": true,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Snitcher",
+        "Dealfront",
+        "Albacross",
+        "Happierleads",
+        "Cognism",
+        "Dropcontact",
+        "Cleanlist",
+        "Leadpipe"
+      ],
+      "sources": [
+        "https://prospeo.io/s/rb2b-alternatives",
+        "https://www.coffee.ai/articles/?p=4742",
+        "https://leadpipe.com/blog/is-rb2b-gdpr-compliant",
+        "https://www.rb2b.com/rb2b-gdpr",
+        "https://happierleads.com/blog/rb2b-doesnt-work-europe-alternatives"
+      ],
+      "note": "Described as strong in Scandinavia, 'partial cookieless tracking'"
+    },
+    {
+      "id": "P07",
+      "prompt": "Best Clearbit Reveal alternatives now that Clearbit is part of HubSpot",
+      "albacross_present": false,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Abmatic AI",
+        "ZoomInfo",
+        "Cognism",
+        "Apollo",
+        "Clay",
+        "RB2B",
+        "Leadfeeder",
+        "Warmly",
+        "HubSpot Breeze"
+      ],
+      "sources": [
+        "https://abmatic.ai/blog/best-clearbit-alternatives-2026-buyer-guide",
+        "https://www.warmly.ai/p/blog/clearbit-competitors",
+        "https://kustiq.com/blog/clearbit-alternatives",
+        "https://salesmotion.io/blog/clearbit-alternatives-hubspot-acquisition",
+        "https://overloop.com/blog/clearbit-alternatives"
+      ],
+      "note": ""
+    },
+    {
+      "id": "P12",
+      "prompt": "Best intent data providers for SMB and mid-market B2B",
+      "albacross_present": false,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Bombora",
+        "ZoomInfo",
+        "Demandbase",
+        "6sense",
+        "Apollo",
+        "RollWorks",
+        "Leadfeeder",
+        "RB2B",
+        "Madison Logic",
+        "Intentsify"
+      ],
+      "sources": [
+        "https://abmatic.ai/blog/best-b2b-intent-data-providers-mid-market",
+        "https://zenabm.com/blog/b2b-intent-data-providers",
+        "https://www.autobound.ai/blog/top-15-intent-data-providers-compared-2026",
+        "https://www.darwinapps.com/blog/11-best-intent-data-providers-for-b2b-saas-in-2026-compared/"
+      ],
+      "note": "Bombora named as standard; Albacross's Bombora partnership not surfaced"
+    },
+    {
+      "id": "P14",
+      "prompt": "How can I identify anonymous companies visiting my website without forms?",
+      "albacross_present": false,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Demandbase",
+        "ZoomInfo",
+        "Leadfeeder",
+        "Lead Forensics",
+        "Vector",
+        "Metadata",
+        "HockeyStack",
+        "Abmatic AI",
+        "Markettailor"
+      ],
+      "sources": [
+        "https://www.leadfeeder.com/guides/website-visitor-identification/",
+        "https://www.default.com/post/identify-anonymous-website-visitors",
+        "https://hockeystack.com/blog-posts/how-to-identify-anonymous-website-visitors",
+        "https://woodpecker.co/blog/identify-anonymous-website-visitors/",
+        "https://www.vector.co/compare/can-demandbase-identify-anonymous-website-visitors"
+      ],
+      "note": "albacross.com ranks #5 US for 'identify website visitors' but is absent here"
+    },
+    {
+      "id": "P18",
+      "prompt": "Is website visitor identification legal under GDPR?",
+      "albacross_present": false,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Leadinfo",
+        "Leadfeeder/Dealfront",
+        "Abmatic AI",
+        "Happierleads",
+        "Leadpipe",
+        "MojoAuth",
+        "Attribuly"
+      ],
+      "sources": [
+        "https://www.leadinfo.com/en/blog/website-visitor-identification-and-gdpr-whats-allowed-and-whats-not/",
+        "https://abmatic.ai/blog/is-website-visitor-identification-gdpr-compliant",
+        "https://www.leadfeeder.com/blog/website-visitor-identification/company-level-vs-person-level-identification/",
+        "https://dealfront.com/blog/company-vs-person-website-identification",
+        "https://leadpipe.com/blog/gdpr-compliant-visitor-identification"
+      ],
+      "note": "Moat topic (TASKS 4.12) fully owned by Leadinfo/Leadfeeder"
+    },
+    {
+      "id": "P37",
+      "prompt": "Albacross alternatives",
+      "albacross_present": true,
+      "albacross_owned_url_in_results": false,
+      "vendors_seen": [
+        "Dealfront",
+        "Leadberry",
+        "Lusha",
+        "Podium",
+        "CustomFit.ai",
+        "Acceligize",
+        "Pega",
+        "Brandwatch",
+        "Hightouch"
+      ],
+      "sources": [
+        "https://alternativeto.net/software/albacross",
+        "https://us.fitgap.com/products/000845/albacross/alternative",
+        "https://www.topadvisor.com/products/albacross/alternatives",
+        "https://www.getapp.com/business-intelligence-analytics-software/a/albacross/alternatives",
+        "https://craft.co/albacross/competitors"
+      ],
+      "note": "Albacross is only the subject; directories own the SERP, several list irrelevant tools; SERP polluted by 'albatross' results"
+    }
+  ],
+  "prompt_checks_summary": {
+    "albacross_mentioned": "4/9 non-branded (P01, P02, P04, P06)",
+    "albacross_owned_url_cited": "0/10",
+    "most_frequent_vendors": [
+      "Leadfeeder/Dealfront",
+      "RB2B",
+      "Leadinfo",
+      "Warmly",
+      "Abmatic AI",
+      "Snitcher",
+      "ZoomInfo",
+      "Cognism"
+    ]
+  },
+  "self_reported_attribution": {
+    "status": "not available",
+    "detail": "Attio deals have only 'Deal source' (Inbound/Outbound); no discovery-source / AI attribute on deals or people (TASKS 1.5, 1.6 open)."
+  },
+  "deltas": {
+    "status": "baseline - no previous snapshot in state/",
+    "vs_prior_months_ai_sessions": "Sep 114 -> Oct 106 AI sessions (-7%) while total sessions grew 8,089 -> 10,732 (+33%); AI share fell 1.41% -> 0.99%"
+  },
+  "notes": [
+    "Baseline snapshot (first run).",
+    "Ahrefs metrics for albacross.com and 4 competitors reused from 2026-10-31 pull; warmly.ai and leadforensics.com pulled 2026-11-02 for date 2026-10-31.",
+    "Money keyword positions from Ahrefs organic-keywords top-100 for US/GB/DE/SE; position null = not in top 100 in any of those markets.",
+    "ChatGPT = 90% of AI sessions; zero sessions from Claude, Copilot, Grok, DeepSeek, Meta AI in 8 weeks.",
+    "Prompt checks are a Google/Bing-style web-search proxy only."
+  ]
+}
