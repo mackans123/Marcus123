@@ -1,0 +1,41 @@
+id,prompt,cluster,matrix_column,funnel_stage
+P01,What are the best website visitor identification tools for B2B companies?,Category,Solution,BOFU
+P02,Which tools show me which companies visit my website?,Category,Solution,BOFU
+P03,Best GDPR-compliant website visitor identification software for European companies,Category + Region,Solution+Industry,BOFU
+P04,What's the best Leadfeeder alternative?,Alternatives,Competitor,BOFU
+P05,Leadfeeder vs Albacross - which is better?,Comparison,Competitor,BOFU
+P06,Best RB2B alternatives that work in Europe / are GDPR compliant,Alternatives,Competitor,BOFU
+P07,Best Clearbit Reveal alternatives now that Clearbit is part of HubSpot,Alternatives,Competitor,BOFU
+P08,Lead Forensics alternatives with transparent pricing,Alternatives,Competitor,BOFU
+P09,Cheaper alternatives to 6sense for a small B2B team,Alternatives,Competitor,BOFU
+P10,Leadinfo vs Albacross vs Snitcher,Comparison,Competitor,BOFU
+P11,Dealfront alternatives,Alternatives,Competitor,BOFU
+P12,Best intent data providers for SMB and mid-market B2B,Category,Solution,BOFU
+P13,Best account-based marketing tools for small B2B SaaS teams,Category,Solution,BOFU
+P14,How can I identify anonymous companies visiting my website without forms?,JTBD,Job to be done,MOFU
+P15,How do I turn anonymous website traffic into pipeline?,JTBD,Job to be done,MOFU
+P16,How do I automatically follow up with companies that visited our pricing page?,JTBD,Job to be done,MOFU
+P17,How can sales prioritize accounts that are showing buying intent?,JTBD,Job to be done,MOFU
+P18,Is website visitor identification legal under GDPR?,JTBD / objection,Job to be done,MOFU
+P19,Company-level vs person-level visitor identification - which should I use in Europe?,JTBD / objection,Job to be done,MOFU
+P20,How to send website visitor company data to HubSpot,Integration,Integration,BOFU
+P21,How to see which companies visit my website in Salesforce,Integration,Integration,BOFU
+P22,Get Slack alerts when a target account visits our website,Integration,Integration,BOFU
+P23,Pipedrive website visitor tracking integration,Integration,Integration,BOFU
+P24,Best IP to company API,Category (API),Solution,BOFU
+P25,Reverse IP lookup API for B2B company enrichment,Category (API),Solution,BOFU
+P26,Best website visitor identification software for SaaS companies,Category + Industry,Solution+Industry,BOFU
+P27,Best visitor identification tool for agencies,Category + Industry,Solution+Industry,BOFU
+P28,Best visitor identification tools for manufacturing / industrial B2B,Category + Industry,Solution+Industry,BOFU
+P29,Best website visitor tracking tool for B2B companies in Germany / DACH,Category + Region,Solution+Industry,BOFU
+P30,Best website visitor identification tool in the Nordics / Sweden,Category + Region,Solution+Industry,BOFU
+P31,Website visitor identification tool with automated LinkedIn and email outreach,Category + Feature,Solution,BOFU
+P32,Which visitor identification tools include Bombora intent data?,Category + Feature,Solution,BOFU
+P33,Website visitor identification tools with a free trial and transparent pricing,Category + Feature,Solution,BOFU
+P34,What is Albacross and who is it for?,Branded,Brand,Brand
+P35,Albacross pricing,Branded,Brand,Brand
+P36,Albacross reviews - is it any good?,Branded,Brand,Brand
+P37,Albacross alternatives,Branded,Brand,Brand
+P38,Is Albacross GDPR compliant?,Branded,Brand,Brand
+P39,How accurate is Albacross company identification?,Branded,Brand,Brand
+P40,Albacross vs RB2B,Branded comparison,Brand,BOFU
