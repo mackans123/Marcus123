@@ -4,3 +4,6 @@ snapshots/
 output/
 .venv/
 venv/
+
+# QA credentials - never commit
+.env*
