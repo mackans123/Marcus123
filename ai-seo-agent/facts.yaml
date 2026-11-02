@@ -68,7 +68,7 @@ not_a_fit:
   - Teams that specifically need person-level (individual visitor) identification of US traffic. Consider person-level tools instead.
 
 proof:   # public case studies only
-  customer_stories: [PayFit, CloudTalk, Omron, Spendesk, Planday, Qvantum]
+  customer_stories: [PayFit, CloudTalk, Omron, Spendesk, Planday, Qvantum, Alpega, Appello]   # Alpega + Appello confirmed public 2026-11-02 (QC); PMM to approve
   quotes: "[[VERIFY: pull approved quotes + metrics from each case study page]]"
 
 site_inconsistencies:   # fix on albacross.com so LLMs don't learn conflicting facts
@@ -76,3 +76,6 @@ site_inconsistencies:   # fix on albacross.com so LLMs don't learn conflicting f
   - "llms.txt says prices are per user; the pricing page doesn't say per user."
   - "llms.txt and older pages use Gain Insight / Generate Leads / Auto-Engage; site nav uses Identify / Signal / Automate / Engage."
   - "Third-party: RB2B's Leadfeeder-alternatives page lists Albacross at €99 and €79 (both wrong vs €59 from)."
+  - "Planday case-study page repeats Appello's 'roughly thirty percent more' text, so AI may credit Planday with Appello's stat. Fix in Webflow."
+  - "/customer-stories (index) returns 404. Redirect it to /success-stories."
+  - "Omron stat must be stated as: Albacross identified 28% of traffic vs 4% from Omron's previous marketing-automation tool (7x). It is NOT a before/after for Omron."
