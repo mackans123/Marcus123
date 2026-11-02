@@ -77,3 +77,11 @@ Realistic link asks: aisdr.com, commonroom.io, derrick-app.com. Competitor-owned
 3. Outreach owner: send the P0 drafts (rb2b, aisdr, knock-ai, getbreakout, syncgtm) after step 1, then the P1 drafts.
 4. Manual checks: read the Reddit threads and watch the YouTube videos; retry getuntitled.ai and opensend.com; check zoominfo.com/sales/albacross-alternatives and prospeo.io/s/albacross-alternatives.
 5. Paid placements (therankmasters "Get Listed", creator fees): a human decides, and any paid placement must be disclosed.
+
+## 7. Peec AI round (2026-11-02): 16 AI-cited pages that name competitors but not Albacross
+Source: `../state/peec/peec-2026-10-04_to_2026-11-02.md`. All 16 pages were fetched live on 2026-11-02. All were reachable, and **none includes Albacross**.
+- `placements.csv` has a new column `peec_citations_30d` (filled only for these 16). Priority by citations: ≥9 = P0, 6–8 = P1, 3–4 = P2. 14 rows were added. revpartners.io (P1) and therankmasters.com (P3 → P0) were updated in place.
+- `tracker.csv` is new: one row per page. `date_sent` is empty. `recheck_date` holds the formula `=IF(G<row>="","",G<row>+30)`, which means send date + 30 days once a date is entered. In a plain-text editor, compute it by hand.
+- New drafts: getwhitewhale.com, zenabm.com-intent (covers both ZenABM pages in one message), therankmasters.com, artemisgtm.ai, salesmotion.io, visualping.io, cognism.com, oppora.ai, lusha.com, lemlist.com, clay.com, marketbetter.ai. Updated drafts: revpartners.io, zoominfo.com (add-on for the /marketing/website-visitor-tracking-tools listicle). No draft for abmatic.ai (a competitor running inaccurate Albacross pages; the corrections come first).
+- Albacross landing pages checked on 2026-11-02, all returning 200: /signal, /identify, /account-based-marketing, /engage, /newsroom/bombora-partnership, /data-processing-agreement. Two return 404: the planned /best-website-visitor-identification-software listicle and /intent-data. Drafts link to /identify until the listicle ships.
+- Human decisions: therankmasters "Get Listed" (paid status unknown; ask for editorial inclusion first, and any paid listing must be disclosed); artemisgtm.ai has affiliate relationships (don't offer one without approval); reciprocal mentions offered to ZenABM and Salesmotion need approval.

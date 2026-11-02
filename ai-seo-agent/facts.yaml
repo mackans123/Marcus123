@@ -32,7 +32,7 @@ product_modules:   # current site navigation names (2026-11)
 
 pricing:   # source: https://www.albacross.com/pricing, checked 2026-11-02
   currency: EUR
-  billing_note: "Listed prices are per month, billed yearly; annual billing saves 30% vs monthly"
+  billing_note: "Listed prices are per month, billed yearly; annual billing saves 30%. Billed monthly: Starter €84, Professional €213 (checked 2026-11-02)"
   free_trial: 14 days, no credit card required
   plans:
     - name: Starter
@@ -47,7 +47,7 @@ pricing:   # source: https://www.albacross.com/pricing, checked 2026-11-02
       highlights: [everything in Starter, unlimited sequences, LinkedIn Ads integration, Google Sheets, CSV export, priority support, HubSpot integration]
     - name: Organisation
       price_from: "Talk to us"
-      identified_companies: "501–1,000 / 1,000–2,000+ per month"
+      identified_companies: "501–1,000 up to 5,000+ per month (tiers)"
       highlights: ["[[VERIFY: Salesforce integration tier, SSO, API access]]"]
   add_on_credits: "Email credits from €0.11–0.17 each, phone credits from €0.37–0.57 each (monthly); annual bundles available"
   per_user: "[[VERIFY: is pricing per user or per account? llms.txt says per user, pricing page does not]]"
@@ -79,3 +79,5 @@ site_inconsistencies:   # fix on albacross.com so LLMs don't learn conflicting f
   - "Planday case-study page repeats Appello's 'roughly thirty percent more' text, so AI may credit Planday with Appello's stat. Fix in Webflow."
   - "/customer-stories (index) returns 404. Redirect it to /success-stories."
   - "Omron stat must be stated as: Albacross identified 28% of traffic vs 4% from Omron's previous marketing-automation tool (7x). It is NOT a before/after for Omron."
+  - "integrations.albacross.com returns HTTP 451 (Vercel deployment disabled) but llms.txt links to it 4 times and the site claims 30+ integrations."
+  - "test.albacross.com (staging app) is indexed and ranks #3 GB for 'albacross'."

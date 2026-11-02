@@ -4,6 +4,8 @@ action: correct
 priority: P1
 page: https://pipeline.zoominfo.com/sales/albacross-review   # updated 2026-05-22, links to albacross.com
 also: https://pipeline.zoominfo.com/sales/albacross-alternatives (not yet checked)
+peec_page: https://pipeline.zoominfo.com/marketing/website-visitor-tracking-tools   # 4 Peec citations (2026-10-04..11-02); Albacross absent live 2026-11-02
+peec_contact: Dennis Sevilla (Chief Strategy Officer, author page https://pipeline.zoominfo.com/author/dennis-sevilla; no editorial contact on page)
 contact: Brandon Tucker (Chief Data Officer, listed author)
 checked: 2026-11-02
 ---
@@ -33,6 +35,25 @@ checked: 2026-11-02
 
 ## Value offer
 - Sources and screenshots. Regional coverage data if PMM approves it. [[VERIFY]]
+
+
+## Add-on (2026-11-02): inclusion ask on the Peec-cited listicle
+**Page:** https://pipeline.zoominfo.com/marketing/website-visitor-tracking-tools (updated 2026-06-14, author Dennis Sevilla, CSO). AI engines cited it 4 times in 30 days (Peec). It lists 12 tools in three groups: ZoomInfo (own, disclosed), Leadfeeder, RB2B, Hotjar, Clarity, GA4, FullStory, Mixpanel, Crazy Egg, VisitorQueue, Snitcher, Matomo. Albacross is absent.
+
+**Priority:** P2 by citations. Bundle it with the review correction above and send nothing separately. A competitor-owned page, so the odds are low. Make the corrections the main ask and inclusion the secondary one.
+
+**Why it fits:** their B2B-identification criteria are company-identification accuracy, signal speed, CRM sync depth (two-way), privacy controls, pricing transparency and best-fit size. Albacross has two-way Salesforce/HubSpot/Pipedrive sync, a DPA and published pricing.
+
+**Suggested entry (≤80 words)**
+<!-- src: https://www.albacross.com/pricing, checked 2026-11-02 (facts.yaml v0.1) -->
+> **Albacross**: company-level B2B visitor identification built in Stockholm for GDPR (DPA available). Identifies companies visiting your site, scores them by fit and intent (incl. Bombora), and alerts Slack/Teams. Two-way sync with Salesforce, HubSpot (Professional+) and Pipedrive. Published pricing from €59/month billed yearly; 14-day free trial. Best fit: SMB and mid-market teams selling into Europe.
+
+**Link:** https://www.albacross.com/identify (200 on 2026-11-02)
+
+**Add to the follow-up message (after the two corrections):**
+> Separately, and only if useful: your website-visitor-tracking tools guide covers EU tools like Snitcher and Leadfeeder. Disclosure: I work at Albacross. Albacross is a European B2B website visitor identification and intent platform that shows which companies visit your site and helps you engage them, GDPR-first. A short entry is attached if you ever expand the B2B identification section: https://www.albacross.com/identify
+
+**Tracker:** row `zoominfo.com-tracking` in `../tracker.csv`.
 
 ## Pre-send checklist (human)
 - [ ] PMM has approved the `pricing` block in `facts.yaml` (status is still DRAFT v0.1).
