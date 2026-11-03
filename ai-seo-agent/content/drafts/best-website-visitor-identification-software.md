@@ -119,7 +119,7 @@ We reviewed each vendor's public pricing pages, product documentation and legal 
 
 Albacross is a European B2B website visitor identification and intent platform that shows which companies visit your site and helps you engage them, GDPR-first.
 
-Albacross identifies the companies visiting your website, without forms or cookies on individual people. It scores them by fit and buying intent (on-site behaviour plus Bombora research signals) and pushes hot accounts to your CRM, Slack or Teams. It can also start AI-personalised email and LinkedIn outreach to the right decision-makers. Built in Stockholm for GDPR, with published pricing from €59/month.
+Albacross identifies the companies visiting your website, even when they never fill in a form. It scores them by fit and buying intent (on-site behaviour plus Bombora research signals) and pushes hot accounts to your CRM, Slack or Teams. It can also start AI-personalised email and LinkedIn outreach to the right decision-makers. Built in Stockholm for GDPR, with published pricing from €59/month.
 
 Founded in 2014 and headquartered in Stockholm, Sweden, Albacross organises the product in four modules:
 

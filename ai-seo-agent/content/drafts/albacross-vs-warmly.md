@@ -10,6 +10,7 @@ h1: "Albacross vs Warmly (2026): An Honest Comparison, Plus Warmly Alternatives"
 author: "[[VERIFY: author name]]"
 last_updated: 2026-11-02
 brief: content/briefs/albacross-vs-warmly.md
+url_safety_note: "URL SAFETY (2026-11-02): no existing URL may be changed or redirected. Publish only on a NEW slug agreed with the SEO team; existing /x-alternative pages stay as they are."
 url_plan:
   status: pending approval
   primary: https://www.albacross.com/compare/albacross-vs-warmly

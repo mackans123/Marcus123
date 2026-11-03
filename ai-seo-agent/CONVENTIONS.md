@@ -39,6 +39,12 @@ Every agent in `.claude/agents/ai-seo-*.md` reads this file first.
 7. Write dates as absolute dates (today's date), never "recently".
 8. Finish every run with a short summary: what you produced (file paths), what needs human action, open questions.
 
+## URL safety (SEO work is in progress, rule set by Marcus on 2026-11-02)
+- **Never change, move, rename, merge or redirect an existing URL or slug.** Never delete or unpublish an existing page or CMS item.
+- New pages go on **new** slugs only, and only after the URL is agreed with the SEO team.
+- Any task that needs a redirect, slug change or consolidation is **ON HOLD (needs SEO team)** in TASKS.md.
+- Never run a full Webflow site publish. It would push other people's pending changes. Publish only individual CMS items that have no pending edits (lastUpdated ≤ lastPublished before our change). Page-level changes stay staged for the web team's next publish.
+
 ## Page blueprints
 
 ### Listicle / alternatives (`best-*`, `*-alternatives`)

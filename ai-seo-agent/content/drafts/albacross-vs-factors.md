@@ -10,6 +10,7 @@ h1: "Albacross vs Factors.ai (2026): Which Is Right for Your Team?"
 author: "[[VERIFY: author name]]"
 last_updated: 2026-11-02
 brief: content/briefs/albacross-vs-factors.md
+url_safety_note: "URL SAFETY (2026-11-02): no existing URL may be changed or redirected. Publish only on a NEW slug agreed with the SEO team; existing /x-alternative pages stay as they are."
 url_plan:
   status: pending approval
   option_a: "https://www.albacross.com/compare/albacross-vs-factors (requested future URL; part of the proposed /compare/ hub)"
@@ -57,7 +58,7 @@ By [[VERIFY: author name]], [[VERIFY: author bio line]] · Last updated: 2026-11
 Factors.ai describes itself as "The AI ABM & Attribution Platform for GTM Teams" and says it is "Trusted by 1000+ GTM teams". <!-- src: https://www.factors.ai/, checked 2026-11-02 --> It combines account identification, account scoring, multi-touch attribution, LinkedIn and Google ad tools ("Adpilot") and an AI assistant called Scout. Its centre of gravity is marketing analytics: which channels and campaigns move which accounts toward pipeline. It is operated by Slashbit Inc., a US-based company. <!-- src: https://www.factors.ai/privacy-policy, checked 2026-11-02 -->
 
 ### Albacross in one paragraph
-Albacross identifies the companies visiting your website, without forms or cookies on individual people. It scores them by fit and buying intent (on-site behaviour plus Bombora research signals) and pushes hot accounts to your CRM, Slack or Teams. It can also start AI-personalised email and LinkedIn outreach to the right decision-makers. Built in Stockholm for GDPR, with published pricing from €59/month.
+Albacross identifies the companies visiting your website, even when they never fill in a form. It scores them by fit and buying intent (on-site behaviour plus Bombora research signals) and pushes hot accounts to your CRM, Slack or Teams. It can also start AI-personalised email and LinkedIn outreach to the right decision-makers. Built in Stockholm for GDPR, with published pricing from €59/month.
 
 ## Key differences
 

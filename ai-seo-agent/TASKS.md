@@ -49,7 +49,7 @@ The sequence follows the 90-day roadmap: **Weeks 1–2** foundations → **Weeks
 | 2.7 | Run Core Web Vitals checks on key templates (home, pricing, alternative pages, newsroom) and compress heavy images and video | 🤖 audit, 👤 fix | P1 | M | CWV pass in PostHog web vitals / GSC |
 | 2.8 | Make sure critical content (pricing tables, comparison tables, FAQs) sits in the **server-rendered HTML** and not in JS tabs or embeds | 🤖 audit | P1 | S | Text visible in raw HTML fetch |
 | 2.9 | Make `llms.txt` a living file: the agent updates it from `facts.yaml` monthly and adds links to new listicle and comparison pages | 🤖 | P3 | S | Auto-updated |
-| 2.10 | Decide the content hub URL: either move `/newsroom` to `/blog` (with 301s) or keep it and create `/compare/` and `/best/` sections | 👤 | P1 | S | Decision + URL structure doc |
+| 2.10 | ⛔ ON HOLD (URL change, needs SEO team sign-off): Decide the content hub URL: either move `/newsroom` to `/blog` (with 301s) or keep it and create `/compare/` and `/best/` sections | 👤 | P1 | S | Decision + URL structure doc |
 | 2.11 | Internal linking: ensure each money page has 5+ relevant internal links in and out (home → listicles, alternatives ↔ listicle, integrations ↔ use cases) | 🤖➜👤 | P1 | M | Link map in repo |
 
 ## WS3: Customer research & positioning (weeks 1–3)
@@ -109,9 +109,9 @@ Each page follows the **Listicle Blueprint**:
 |---|---|---|---|---|
 | 5.1 | Pull every newsroom and ebook URL with Ahrefs/GSC data (impressions, position, clicks, conversions) and classify each as **refresh / merge / redirect / noindex** | 🤖 | P0 | S |
 | 5.2 | Refresh the quick-win pages ranking #4–#15 with commercial intent: `/newsroom/website-visitor-tracking` (#5 for "identify website visitors"), `/newsroom/how-to-identify-website-visitors` (#5 for "b2b website visitor identification"), `/newsroom/b2b-buying-signals` (#10), `/newsroom/using-intent-data-for-b2b-marketing`, `/newsroom/reverse-ip-lookup`. For each: add a TL;DR, a mini shortlist with Albacross, a comparison table, VOC FAQs, an updated date and author, and internal links to the new listicles | 🤖➜👤 | P0 | M |
-| 5.3 | Consolidate cannibalising posts, e.g. "website-visitor-tracking" and "how-to-identify-website-visitors" compete for the same intent: merge them and 301 | 🤖➜👤 | P1 | S |
+| 5.3 | ⛔ ON HOLD (URL change, needs SEO team sign-off): Consolidate cannibalising posts, e.g. "website-visitor-tracking" and "how-to-identify-website-visitors" compete for the same intent: merge them and 301 | 🤖➜👤 | P1 | S |
 | 5.4 | Replace generic copied FAQ blocks with page-specific conversation-tree FAQs (from 3.2 and AlsoAsked) | 🤖➜👤 | P1 | M |
-| 5.5 | Prune or redirect thin and obsolete newsroom posts (old company news, non-ICP topics) | 🤖➜👤 | P2 | S |
+| 5.5 | ⛔ ON HOLD (URL change, needs SEO team sign-off): Prune or redirect thin and obsolete newsroom posts (old company news, non-ICP topics) | 🤖➜👤 | P2 | S |
 | 5.6 | Add GEO-style enrichments to all money pages: Albacross statistics, quotable expert/customer quotes, cited external sources (Princeton GEO: +28–43% visibility) | 🤖➜👤 | P1 | M |
 | 5.7 | Set up a **90-day refresh rotation**: the agent flags any money page older than 90 days or losing rank or citations, and writes a refresh brief | 🤖 | P1 | S |
 

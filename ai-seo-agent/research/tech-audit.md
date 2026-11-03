@@ -252,7 +252,7 @@ Organisation ("Talk to us") is left out of `offers` because an Offer without a p
   "applicationCategory": "BusinessApplication",
   "applicationSubCategory": "B2B website visitor identification and intent data platform",
   "operatingSystem": "Web",
-  "description": "Albacross identifies the companies visiting your website, without forms or cookies on individual people. It scores them by fit and buying intent (on-site behaviour plus Bombora research signals) and pushes hot accounts to your CRM, Slack or Teams. It can also start AI-personalised email and LinkedIn outreach to the right decision-makers. Built in Stockholm for GDPR, with published pricing from €59/month.",
+  "description": "Albacross identifies the companies visiting your website, even when they never fill in a form. It scores them by fit and buying intent (on-site behaviour plus Bombora research signals) and pushes hot accounts to your CRM, Slack or Teams. It can also start AI-personalised email and LinkedIn outreach to the right decision-makers. Built in Stockholm for GDPR, with published pricing from €59/month.",
   "publisher": { "@id": "https://www.albacross.com/#organization" },
   "offers": [
     {
