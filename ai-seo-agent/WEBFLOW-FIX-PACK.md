@@ -5,10 +5,11 @@ These fixes are ready to apply. **None of them changes a URL, slug or redirect**
 Context:
 - The site is not on Webflow Enterprise, so page changes only go live through a **full-site publish**.
 - Someone already has unpublished changes on the Home page (edited 2026-10-30; last publish 2026-10-29). Check with the team before publishing.
-## ✅ Applied by Claude on 2026-11-03 (STAGED: goes live on the team's next site publish)
+## ✅ Applied by Claude on 2026-11-03
 - A1: Organization + WebSite JSON-LD on Home
 - A2: SoftwareApplication + offers JSON-LD on Pricing
 - A3: FAQPage JSON-LD on /6sense-alternative, /clearbit-alternative and /lead-forensics-alternative (it mirrors the visible FAQs word for word)
+- /leadfeeder-alternative copy: "only reads activity on your website" → "scores activity on your website"; table cell "Your website only" → "Not stated on pricing page"; intent FAQ reworded to say Leadfeeder lists intent signals/topics on Activate+; price FAQ now says "both billed annually; the plans include different company volumes". The page's FAQPage JSON-LD was synced to match.
 - Pricing SEO title and meta description. Old: "What does Albacross' Revenue Acceleration platform cost? Get a customized pricing plan…". New: "Published pricing: Starter from €59/month and Professional from €149/month billed yearly, Organisation on request. 14-day free trial, no credit card needed."
 
 No slugs or URLs were changed. Nothing was published. After the next publish, validate at https://search.google.com/test/rich-results.
@@ -71,12 +72,10 @@ Leadfeeder's pricing page offers "intent signals" and "intent topics" filters (A
 - Same check on `/leadinfo-alternative` and `/snitcher-alternative` meta descriptions ("Leadinfo scores on-site visits…").
 - "100+ intent signals" and "3B+ events" sit in meta descriptions and hero stats. PMM must confirm them; until then they're unapproved claims.
 
-## E. Case-study template mix-ups (Designer, conditional-visibility blocks): TASKS 3.7
-The CMS fields are correct; the **static blocks in the Customer Stories template** are attached to the wrong customers:
-- the Omron page shows Alpega's testimonial (with the Alpega manager's name);
-- the Planday page shows Appello's "roughly thirty percent more" stat.
+## E. Case-study template: every story's text ships on every case-study page (Designer) · TASKS 3.7
+**Root cause (verified 2026-11-03):** the Customer Stories template holds 11 static sections (`section_main-story-content` + combo classes apello, reply, qvantum, spendesk, payfit, omron, alpega, planday, phc, cloudtalk, general). Conditional visibility hides the 10 that don't belong, but Webflow still renders them in the HTML with `w-condition-invisible` (display:none). People see the right story. AI crawlers read the raw HTML, see all 11 customers' quotes and stats on every page, and misattribute them (e.g. Alpega's testimonial on Omron, Appello's "thirty percent more" on Planday).
 
-Fix the visibility conditions (`cVisibilityContent`) on those blocks.
+**Fix:** move each customer's story text into that item's CMS `content` rich-text field (it's empty for 10 of 12 items), bind one rich-text block in the template to it, and delete the 11 static sections. URLs stay unchanged.
 
 ## F. Headings and performance (Designer): TASKS 2.12 / 2.7
 - 22 pages have no `<h1>`, including Home, /pricing and the product pages. Set the headline element's tag to H1. This is a visual no-op.
