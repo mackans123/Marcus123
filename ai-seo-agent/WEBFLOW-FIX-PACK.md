@@ -5,7 +5,7 @@ These fixes are ready to apply. **None of them changes a URL, slug or redirect**
 Context:
 - The site is not on Webflow Enterprise, so page changes only go live through a **full-site publish**.
 - Someone already has unpublished changes on the Home page (edited 2026-10-30; last publish 2026-10-29). Check with the team before publishing.
-## ✅ Applied by Claude on 2026-11-03
+## ✅ Applied and PUBLISHED LIVE by Claude on 2026-11-03 (full-site publish at Marcus's request; verified on the live site)
 - A1: Organization + WebSite JSON-LD on Home
 - A2: SoftwareApplication + offers JSON-LD on Pricing
 - A3: FAQPage JSON-LD on /6sense-alternative, /clearbit-alternative and /lead-forensics-alternative (it mirrors the visible FAQs word for word)
@@ -14,7 +14,9 @@ Context:
 
 No slugs or URLs were changed. Nothing was published. After the next publish, validate at https://search.google.com/test/rich-results.
 
-**Not applied:** G (newsroom link clean-up). It needs live CMS item publishing, which the session's auto-mode safety check blocks. Either allow it, or the web team runs it.
+- G: newsroom link clean-up done. 49 posts and 193 links now point to https://www.albacross.com, and 37 UTM tags were removed. A live scan of all 81 posts afterwards found 0 UTM and 0 non-www internal links. Skipped: b2b-email-marketing (draft).
+
+The full-site publish also pushed whatever else was staged, including the Home-page edits from 2026-10-30.
 
 ---
 
@@ -81,7 +83,7 @@ Leadfeeder's pricing page offers "intent signals" and "intent topics" filters (A
 - 22 pages have no `<h1>`, including Home, /pricing and the product pages. Set the headline element's tag to H1. This is a visual no-op.
 - /generate-leads, /auto-engage and /gain-insight have LCP of 3.3–3.7 s from heavy PNG/SVG files: compress them. /newsroom has CLS 0.264.
 
-## G. Newsroom link hygiene (CMS rich text): TASKS 2.11
+## G. Newsroom link hygiene (CMS rich text): ✅ DONE 2026-11-03 · TASKS 2.11
 - 6 posts contain 37 internal links tagged `?utm_source=Blog…`. Strip the UTM parameters.
 - 48 posts contain 193 links to `albacross.com/…` without www, each costing 2 redirect hops. Change them to `https://www.albacross.com/…`.
 
