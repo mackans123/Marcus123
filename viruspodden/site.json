@@ -1,0 +1,55 @@
+{
+  "_info": "Inställningar för viruspodden.se. Tomma fält döljs automatiskt på sidan.",
+
+  "site_url": "https://viruspodden.se",
+  "feed_url": "https://feed.podbean.com/viruspodden/feed.xml",
+
+  "title": "Viruspodden",
+  "tagline": "Sveriges första podcast om virus och virussjukdomar",
+  "intro": "Professorerna Lennart Svensson och Åke Lundkvist bjuder in ledande experter och diskuterar såväl nutida som dåtida virusämnen.",
+  "about": [
+    "Viruspodden är Sveriges första podcast om virus och virussjukdomar. Den produceras av Lennart Svensson och Åke Lundkvist, som bjuder in ledande experter och diskuterar såväl nutida som dåtida virusämnen.",
+    "Podden ämnar till att folkbilda allmänheten om virus och dess effekter på människor och samhället."
+  ],
+
+  "contact": {
+    "email": "",
+    "form_endpoint": "",
+    "form_access_key": ""
+  },
+
+  "platforms": {
+    "spotify": "",
+    "apple": "",
+    "podbean": "",
+    "youtube": "",
+    "amazon": ""
+  },
+
+  "hosts": [
+    {
+      "name": "Lennart Svensson",
+      "role": "Senior professor i virologi",
+      "photo": "img/lennart-svensson.jpg",
+      "affiliation": "Linköpings universitet · Karolinska Institutet",
+      "bio": [
+        "Lennart Svensson är senior professor i virologi med drygt 45 års erfarenhet av virusforskning. Han disputerade på rotavirus vid Karolinska Institutet 1987, blev docent 1994 och är sedan 2003 professor i molekylär virologi vid Linköpings universitet och knuten till Karolinska Institutet.",
+        "Under sin forskarkarriär har han haft omfattande uppdrag som vetenskaplig granskare för såväl nationella som internationella organisationer och vetenskapliga tidskrifter, däribland Världshälsoorganisationen (WHO) och Vetenskapsrådet. Han är initiativtagare till Svenska Sällskapet för Virologi och var sällskapets ordförande under perioden 2009–2016."
+      ]
+    },
+    {
+      "name": "Åke Lundkvist",
+      "role": "Professor i virologi",
+      "photo": "img/ake-lundkvist.jpg",
+      "affiliation": "Uppsala universitet",
+      "bio": [
+        "Åke Lundkvist är professor i virologi med drygt 35 års erfarenhet av virusforskning. Han disputerade på hantavirus 1993, blev docent i virologi 1998 och adjungerad professor i molekylär virologi 2003 vid Karolinska Institutet, och är sedan 2013 professor i virologi vid Uppsala universitet.",
+        "Parallellt med den akademiska karriären var han anställd som mikrobiolog vid SBL 1990–1993, chefsmikrobiolog vid SMI till 2003, och laboratoriechef för BSL3/BSL4-verksamheten vid SMI till 2013. Han har varit vetenskaplig granskare för såväl nationella som internationella organisationer och vetenskapliga tidskrifter, däribland det franska Pasteurinstitutet samt tyska, polska och estniska vetenskapsråd. Han är initiativtagare till och organiserar den internationella konferensserien European Meeting on Viral Zoonoses (EMVZ) sedan 2001."
+      ]
+    }
+  ],
+
+  "stats": {
+    "experience_years": 80
+  }
+}

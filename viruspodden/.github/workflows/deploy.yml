@@ -1,0 +1,59 @@
+# Bygger viruspodden.se från Podbeans RSS-flöde och publicerar på GitHub Pages.
+# Körs vid varje ändring, var fjärde timme (så nya avsnitt dyker upp automatiskt)
+# och manuellt via Actions → "Bygg och publicera" → "Run workflow".
+name: Bygg och publicera
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "23 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Hämta avsnitt från Podbean och bygg sajten
+        run: python3 build.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      # GitHub pausar schemalagda körningar i repon utan aktivitet på 60 dagar.
+      # Det här håller schemat igång även när ingen ändrar i koden.
+      - name: Håll schemat aktivt
+        if: github.event_name == 'schedule'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/deploy.yml/enable"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EXEMPELDATA för lokal förhandsvisning (python3 build.py med flaggan sample).
+     De riktiga avsnitten hämtas från Podbeans RSS-flöde (feed_url i site.json). -->
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>Viruspodden</title>
+  <link>https://viruspodden.podbean.com</link>
+  <description>Exempelflöde för förhandsvisning.</description>
+  <language>sv</language>
+  <itunes:author>Lennart Svensson och Åke Lundkvist</itunes:author>
+
+  <item>
+    <title>Exempel: Influensasäsongen – vad väntar i vinter?</title>
+    <link>https://viruspodden.podbean.com/e/exempel-influensasasongen/</link>
+    <pubDate>Mon, 27 Oct 2026 06:00:00 +0100</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>00:52:14</itunes:duration>
+    <itunes:episode>48</itunes:episode>
+    <content:encoded><![CDATA[<p><strong>Exempeltext.</strong> Här visas avsnittets beskrivning precis som den är skriven på Podbean – med stycken, <em>kursiv</em> och <a href="https://www.folkhalsomyndigheten.se">länkar</a>.</p><p>I avsnittet diskuteras hur influensavirus förändras från år till år, varför vaccinet behöver uppdateras och vilka grupper som bör vaccinera sig.</p><ul><li>Antigen drift och shift</li><li>Hur vaccinstammar väljs ut</li><li>Fågelinfluensa – ett hot mot människor?</li></ul><script>alert('rensas bort')</script>]]></content:encoded>
+  </item>
+
+  <item>
+    <title>Exempel: Hantavirus och sorkfeber i Norrland</title>
+    <link>https://viruspodden.podbean.com/e/exempel-hantavirus/</link>
+    <pubDate>Mon, 29 Sep 2026 06:00:00 +0200</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>2895</itunes:duration>
+    <itunes:episode>47</itunes:episode>
+    <description><![CDATA[<p>Exempeltext. Sorkfeber orsakas av Puumalavirus som sprids via skogssorkar. Vi pratar om varför vissa år ger stora utbrott och hur man skyddar sig när man städar stugan.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Exempel: Rotavirus – från upptäckt till vaccin</title>
+    <link>https://viruspodden.podbean.com/e/exempel-rotavirus/</link>
+    <pubDate>Mon, 01 Sep 2026 06:00:00 +0200</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>01:04:40</itunes:duration>
+    <itunes:episode>46</itunes:episode>
+    <description><![CDATA[<p>Exempeltext. Rotavirus var länge den vanligaste orsaken till svår diarré hos små barn. Hur gick det till när vaccinet togs fram och vad har det betytt för barnsjukvården?</p>]]></description>
+  </item>
+
+  <item>
+    <title>Exempel: Fästingburna virus – TBE sprider sig</title>
+    <link>https://viruspodden.podbean.com/e/exempel-tbe/</link>
+    <pubDate>Mon, 16 Jun 2026 06:00:00 +0200</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>00:47:03</itunes:duration>
+    <itunes:episode>45</itunes:episode>
+    <description>Exempeltext i ren text utan HTML.
+
+Andra stycket – radbrytningar blir egna stycken på sidan.</description>
+  </item>
+
+  <item>
+    <title>Exempel: Mässling gör comeback</title>
+    <link>https://viruspodden.podbean.com/e/exempel-massling/</link>
+    <pubDate>Mon, 12 May 2026 06:00:00 +0200</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>00:41:30</itunes:duration>
+    <itunes:episode>44</itunes:episode>
+    <description><![CDATA[<p>Exempeltext. Mässling är ett av de mest smittsamma virusen vi känner till. Varför ökar fallen i Europa igen?</p>]]></description>
+  </item>
+
+  <item>
+    <title>Exempel: Zoonoser – när virus hoppar från djur till människa</title>
+    <link>https://viruspodden.podbean.com/e/exempel-zoonoser/</link>
+    <pubDate>Mon, 14 Apr 2026 06:00:00 +0200</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>00:58:12</itunes:duration>
+    <itunes:episode>43</itunes:episode>
+    <description><![CDATA[<p>Exempeltext. De flesta nya virussjukdomar har sitt ursprung hos djur. Vi går igenom hur smittspridningen sker och hur man övervakar den.</p>]]></description>
+  </item>
+
+  <item>
+    <title>Exempel: Norovirus – vinterkräksjukan</title>
+    <link>https://viruspodden.podbean.com/e/exempel-norovirus/</link>
+    <pubDate>Mon, 09 Feb 2026 06:00:00 +0100</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>00:44:51</itunes:duration>
+    <itunes:episode>42</itunes:episode>
+    <description><![CDATA[<p>Exempeltext. Varför är norovirus så svårt att bli av med, och varför hjälper inte handsprit?</p>]]></description>
+  </item>
+
+  <item>
+    <title>Exempel: Säkerhetslaboratorier – att arbeta med de farligaste virusen</title>
+    <link>https://viruspodden.podbean.com/e/exempel-bsl4/</link>
+    <pubDate>Mon, 08 Dec 2025 06:00:00 +0100</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>01:12:05</itunes:duration>
+    <itunes:episode>41</itunes:episode>
+    <description><![CDATA[<p>Exempeltext. Hur fungerar ett BSL4-laboratorium och vilka virus hanteras där?</p>]]></description>
+  </item>
+
+  <item>
+    <title>Exempel: Hur ett vaccin blir till</title>
+    <link>https://viruspodden.podbean.com/e/exempel-vaccin/</link>
+    <pubDate>Mon, 10 Nov 2025 06:00:00 +0100</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>00:50:00</itunes:duration>
+    <itunes:episode>40</itunes:episode>
+    <description><![CDATA[<p>Exempeltext. Från grundforskning till godkänt vaccin – vilka steg krävs och hur lång tid tar det?</p>]]></description>
+  </item>
+
+  <item>
+    <title>Exempel: Välkomna till Viruspodden!</title>
+    <link>https://viruspodden.podbean.com/e/exempel-valkomna/</link>
+    <pubDate>Mon, 06 Mar 2023 06:00:00 +0100</pubDate>
+    <enclosure url="/assets/sample.wav" length="192044" type="audio/wav"/>
+    <itunes:duration>00:12:30</itunes:duration>
+    <itunes:episodeType>trailer</itunes:episodeType>
+    <description><![CDATA[<p>Exempeltext. Lennart och Åke presenterar sig och berättar vad podden kommer att handla om.</p>]]></description>
+  </item>
+</channel>
+</rss>
