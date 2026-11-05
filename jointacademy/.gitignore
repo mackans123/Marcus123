@@ -1,0 +1,8 @@
+# Lead and account data: personal data, never commit
+audit/
+exports/
+out/
+sources/
+fresh/
+copy/*.csv
+.mx_cache.json
