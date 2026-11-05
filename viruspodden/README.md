@@ -40,10 +40,14 @@ Allt innehåll som inte kommer från Podbean finns i **`site.json`**:
 
 Ändrar man `site.json` direkt på GitHub (pennikonen) byggs och publiceras sidan om automatiskt.
 
-### Foton på programledarna
+### Utseende och bilder
 
-Lägg porträtten som `static/img/lennart-svensson.jpg` och `static/img/ake-lundkvist.jpg`
-(kvadratiska, minst 400×400 px). Finns inget foto visas initialerna istället.
+Färger och typsnitt följer poddens omslag: blå bakgrund, turkos accent, Bebas Neue i rubriker
+och Open Sans i brödtext. Omslaget hämtas automatiskt från Podbean. Bilden på programledarna
+(`static/img/programledare.jpg`) är beskuren från omslaget och kan bytas mot ett annat foto.
+
+Vill man ha separata porträtt läggs de som `static/img/lennart-svensson.jpg` och
+`static/img/ake-lundkvist.jpg` (kvadratiska, minst 400×400 px).
 
 ### Kontaktformuläret
 
@@ -102,8 +106,8 @@ site.json                 Texter, länkar och inställningar
 build.py                  Hämtar RSS-flödet och bygger sajten till _site/
 static/style.css          Utseende
 static/app.js             Spelare, sök, meny, kontaktformulär
-static/fonts/             Typsnitt (Fraunces och Inter, SIL Open Font License)
-static/img/               Foton på programledarna
+static/fonts/             Typsnitt (Bebas Neue och Open Sans, SIL Open Font License)
+static/img/               Omslaget och bilden på programledarna
 sample/                   Exempeldata för förhandsgranskning
 .github/workflows/        Automatisk byggning och publicering
 ```

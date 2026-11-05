@@ -25,7 +25,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parent
 STATIC = ROOT / "static"
@@ -118,7 +118,7 @@ def slugify(value: str) -> str:
 
 def slug_from_link(link: str) -> str:
     """Podbean-länkar ser ut som https://xxx.podbean.com/e/avsnittets-namn/."""
-    path = urlparse(link).path.strip("/")
+    path = unquote(urlparse(link).path).strip("/")
     if path.startswith("e/"):
         return slugify(path[2:])
     return ""
@@ -234,6 +234,13 @@ def excerpt(raw: str, limit: int = 200) -> str:
     return cut + "…"
 
 
+def clean_title(title: str) -> str:
+    """Podbean-titlar börjar ofta med avsnittsnumret ("34. Historien om HIV") –
+    numret visas redan separat, så det tas bort ur rubriken."""
+    cleaned = re.sub(r"^\s*(avsnitt\s*)?\d+\s*[.:]\s*[–-]?\s*", "", title, flags=re.I)
+    return cleaned or title
+
+
 def parse_date(raw: str) -> datetime:
     try:
         d = email.utils.parsedate_to_datetime(raw)
@@ -274,7 +281,7 @@ def parse_feed(data: bytes) -> tuple[dict, list[dict]]:
         num = text(item, "itunes:episode")
         image = attr(item, "itunes:image", "href")
         episodes.append({
-            "title": title,
+            "title": clean_title(title),
             "link": link,
             "guid": text(item, "guid") or audio,
             "date": date,
@@ -323,8 +330,8 @@ def parse_feed(data: bytes) -> tuple[dict, list[dict]]:
 ICONS = {
     "play": '<path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="currentColor"/>',
     "pause": '<rect x="6.5" y="5" width="4" height="14" rx="1.2" fill="currentColor"/><rect x="13.5" y="5" width="4" height="14" rx="1.2" fill="currentColor"/>',
-    "back": '<path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="16.5" font-size="7" font-weight="700" text-anchor="middle" fill="currentColor" font-family="Inter,system-ui,sans-serif">15</text>',
-    "fwd": '<path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="16.5" font-size="7" font-weight="700" text-anchor="middle" fill="currentColor" font-family="Inter,system-ui,sans-serif">30</text>',
+    "back": '<path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="16.5" font-size="7" font-weight="700" text-anchor="middle" fill="currentColor" font-family="Open Sans,system-ui,sans-serif">15</text>',
+    "fwd": '<path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="16.5" font-size="7" font-weight="700" text-anchor="middle" fill="currentColor" font-family="Open Sans,system-ui,sans-serif">30</text>',
     "close": '<path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
     "spotify": '<circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M7 9.6c3.4-1 7.3-.7 10.2 1M7.6 12.7c2.8-.8 5.9-.5 8.3.9M8.2 15.6c2.2-.6 4.5-.4 6.4.7" stroke="var(--icon-cut, #fff)" stroke-width="1.6" stroke-linecap="round" fill="none"/>',
     "apple": '<circle cx="12" cy="10" r="2.6" fill="currentColor"/><path d="M10.6 14h2.8l-.6 7h-1.6z" fill="currentColor"/><path d="M7.4 15.6a7 7 0 1 1 9.2 0M5 18.3a10 10 0 1 1 14 0" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>',
@@ -408,10 +415,18 @@ class Site:
         return f"{self.prefix(depth)}assets/{name}" + (f"?v={v}" if v else "")
 
     def cover_src(self, depth: int) -> str:
-        return self.cover or self.asset("img/cover.svg", depth)
+        if self.cover:
+            return self.cover
+        if (STATIC / "img" / "cover.jpg").exists():
+            return self.asset("img/cover.jpg", depth)
+        return self.asset("img/cover.svg", depth)
 
     def cover_abs(self) -> str:
-        return self.cover or f"{self.url}/assets/img/cover.svg"
+        if self.cover:
+            return self.cover
+        if (STATIC / "img" / "cover.jpg").exists():
+            return f"{self.url}/assets/img/cover.jpg"
+        return f"{self.url}/assets/img/cover.svg"
 
     def ep_url(self, ep: dict, depth: int) -> str:
         return f"{self.prefix(depth)}avsnitt/{ep['slug']}/"
@@ -492,12 +507,12 @@ class Site:
 <meta property="og:image" content="{e(og_image)}">
 <meta property="og:locale" content="sv_SE">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0d1b2a">
+<meta name="theme-color" content="#0c4469">
 <link rel="icon" href="{self.asset('img/favicon.svg', depth)}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{e(self.cover_src(depth))}">
 {rss}
-<link rel="preload" href="{p}assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{p}assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{p}assets/fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{p}assets/fonts/open-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{self.asset('style.css', depth)}">
 {ld}
 </head>
@@ -506,7 +521,7 @@ class Site:
 {preview}
 <header class="site-header">
   <div class="wrap site-header__inner">
-    <a class="brand" href="{p}" aria-label="{e(self.title)} – startsida">{logo_svg()}<span>{e(self.title)}</span></a>
+    <a class="brand" href="{p}" aria-label="{e(self.title)} – startsida">{logo_svg()}<span>{e(self.title.upper())}</span></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Meny">{icon("menu")}</button>
     <nav id="site-nav" class="site-nav" aria-label="Huvudmeny">{nav_html}</nav>
   </div>
@@ -517,7 +532,7 @@ class Site:
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
     <div class="site-footer__brand">
-      <a class="brand brand--footer" href="{p}">{logo_svg()}<span>{e(self.title)}</span></a>
+      <a class="brand brand--footer" href="{p}">{logo_svg()}<span>{e(self.title.upper())}</span></a>
       <p>{e(self.cfg.get("tagline", ""))}</p>
     </div>
     <div class="site-footer__links">
@@ -560,7 +575,7 @@ class Site:
     # --- komponenter ------------------------------------------------------
 
     def episode_row(self, ep: dict, depth: int, heading: str = "h3") -> str:
-        meta = [self.ep_label(ep), f'<time datetime="{ep["date_iso"]}">{ep["date_display"]}</time>']
+        meta = [f'<span class="ep-num">{self.ep_label(ep)}</span>', f'<time datetime="{ep["date_iso"]}">{ep["date_display"]}</time>']
         if ep["duration_display"]:
             meta.append(ep["duration_display"])
         search = e(f'{ep["title"]} {ep["excerpt"]} {self.ep_label(ep)}'.lower())
@@ -577,10 +592,10 @@ class Site:
 </article>"""
 
     def featured(self, ep: dict) -> str:
-        meta = [self.ep_label(ep), f'<time datetime="{ep["date_iso"]}">{ep["date_display"]}</time>']
+        meta = [f'<span class="ep-num">{self.ep_label(ep)}</span>', f'<time datetime="{ep["date_iso"]}">{ep["date_display"]}</time>']
         if ep["duration_display"]:
             meta.append(ep["duration_display"])
-        return f"""<section class="section section--tight" aria-labelledby="latest-h">
+        return f"""<section class="section section--featured" aria-labelledby="latest-h">
   <div class="wrap">
     <article class="featured">
       <img class="featured__img" src="{e(ep['image'] or self.cover_src(0))}" alt="" width="220" height="220">
@@ -598,10 +613,12 @@ class Site:
   </div>
 </section>"""
 
-    def host_card(self, host: dict, depth: int) -> str:
+    def host_card(self, host: dict, depth: int, show_initials: bool = True) -> str:
         photo = host.get("photo", "")
         if photo and (STATIC / photo).exists():
             media = f'<img class="host__photo" src="{self.asset(photo, depth)}" alt="Porträtt av {e(host["name"])}" loading="lazy" width="160" height="160">'
+        elif not show_initials:
+            media = ""
         else:
             initials = "".join(w[0] for w in host["name"].split()[:2])
             media = f'<div class="host__photo host__photo--initials" aria-hidden="true">{e(initials)}</div>'
@@ -685,15 +702,18 @@ class Site:
         ]
         stats_html = "".join(f'<div class="stat"><span class="stat__num">{e(n)}</span><span class="stat__label">{e(l)}</span></div>' for n, l in stats)
         about = "".join(f"<p>{e(p)}</p>" for p in cfg.get("about", []))
-        hosts = "".join(self.host_card(h, 0) for h in cfg.get("hosts", []))
+        duo_photo = cfg.get("hosts_photo", "")
+        has_duo = bool(duo_photo) and (STATIC / duo_photo).exists()
+        hosts = "".join(self.host_card(h, 0, show_initials=not has_duo) for h in cfg.get("hosts", []))
+        duo = (f'<figure class="duo"><img src="{self.asset(duo_photo, 0)}" alt="Lennart Svensson och Åke Lundkvist" loading="lazy" width="960" height="624">'
+               f'<figcaption>{e(cfg.get("byline", "").removeprefix("med ").strip())}</figcaption></figure>' if has_duo else "")
         rows = "".join(self.episode_row(ep, 0) for ep in more)
 
-        body = f"""<section class="hero">
-  <div class="hero__bg" aria-hidden="true"></div>
+        body = f"""<section class="hero velvet">
   <div class="wrap hero__inner">
     <div class="hero__text">
-      <p class="eyebrow eyebrow--light">Podcast · Virologi · Folkbildning</p>
-      <h1 class="hero__title">{e(self.title)}</h1>
+      <h1 class="hero__title">{e(self.title.upper())}</h1>
+      <p class="hero__byline">{e(cfg.get("byline", ""))}</p>
       <p class="hero__tagline">{e(cfg.get("tagline", ""))}</p>
       <p class="hero__intro">{e(cfg.get("intro", ""))}</p>
       <div class="actions">
@@ -735,6 +755,7 @@ class Site:
   <div class="wrap">
     <p class="eyebrow">Programledare</p>
     <h2 id="pl-h">Två professorer i virologi</h2>
+    {duo}
     <div class="hosts">{hosts}</div>
   </div>
 </section>
@@ -763,7 +784,7 @@ class Site:
         for year, eps in groups.items():
             rows = "".join(self.episode_row(ep, 1) for ep in eps)
             blocks.append(f'<section class="year-group" aria-labelledby="y{year}"><h2 class="year-group__h" id="y{year}">{year}</h2><div class="ep-list">{rows}</div></section>')
-        body = f"""<section class="page-head">
+        body = f"""<section class="page-head velvet">
   <div class="wrap">
     <p class="eyebrow eyebrow--light">Arkiv</p>
     <h1>Alla avsnitt</h1>
@@ -788,7 +809,7 @@ class Site:
     def build_episode(self, i: int, ep: dict) -> None:
         newer = self.episodes[i - 1] if i > 0 else None
         older = self.episodes[i + 1] if i + 1 < len(self.episodes) else None
-        meta = [self.ep_label(ep), f'<time datetime="{ep["date_iso"]}">{ep["date_display"]}</time>']
+        meta = [f'<span class="ep-num">{self.ep_label(ep)}</span>', f'<time datetime="{ep["date_iso"]}">{ep["date_display"]}</time>']
         if ep["duration_display"]:
             meta.append(ep["duration_display"])
         nav = []
@@ -802,7 +823,7 @@ class Site:
                         if ep["link"] else "")
         notes = ep["html"] or f'<p>{e(ep["excerpt"])}</p>'
         body = f"""<article class="episode">
-  <header class="page-head page-head--episode">
+  <header class="page-head page-head--episode velvet">
     <div class="wrap episode__head">
       <img class="episode__img" src="{e(ep['image'] or self.cover_src(2))}" alt="" width="240" height="240">
       <div>
@@ -852,7 +873,7 @@ class Site:
             active="avsnitt"))
 
     def build_404(self) -> None:
-        body = f"""<section class="page-head page-head--center">
+        body = f"""<section class="page-head page-head--center velvet">
   <div class="wrap">
     <p class="eyebrow eyebrow--light">404</p>
     <h1>Sidan kunde inte hittas</h1>
@@ -894,8 +915,8 @@ class Site:
             self.versions[f] = hashlib.sha1((STATIC / f).read_bytes()).hexdigest()[:8]
         (dest / "img").mkdir(exist_ok=True)
         (dest / "img" / "favicon.svg").write_text(
-            logo_svg("").replace('<svg class=""', '<svg xmlns="http://www.w3.org/2000/svg" color="#d9483b"')
-            .replace('class="knob"', 'fill="#d9483b"').replace('class="dot"', 'fill="#ffd9cf"'),
+            logo_svg("").replace('<svg class=""', '<svg xmlns="http://www.w3.org/2000/svg" color="#2bbbb4"')
+            .replace('class="knob"', 'fill="#2bbbb4"').replace('class="dot"', 'fill="#06191f"'),
             encoding="utf-8")
         if not (dest / "img" / "cover.svg").exists():
             (dest / "img" / "cover.svg").write_text(placeholder_cover(self.title), encoding="utf-8")
@@ -914,13 +935,13 @@ class Site:
 
 
 def placeholder_cover(title: str) -> str:
-    mark = (logo_svg("").replace('<svg class=""', '<svg x="140" y="110" width="200" height="200" color="#d9483b"')
-            .replace('class="knob"', 'fill="#d9483b"').replace('class="dot"', 'fill="#0d1b2a"'))
+    mark = (logo_svg("").replace('<svg class=""', '<svg x="140" y="110" width="200" height="200" color="#2bbbb4"')
+            .replace('class="knob"', 'fill="#2bbbb4"').replace('class="dot"', 'fill="#06191f"'))
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
-<defs><radialGradient id="g" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#1b3350"/><stop offset="1" stop-color="#0d1b2a"/></radialGradient></defs>
+<defs><radialGradient id="g" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#1d5f8e"/><stop offset="1" stop-color="#0c4469"/></radialGradient></defs>
 <rect width="480" height="480" fill="url(#g)"/>
 {mark}
-<text x="240" y="380" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="56" font-weight="600" fill="#f4efe6">{e(title)}</text>
+<text x="240" y="390" text-anchor="middle" font-family="Bebas Neue, Arial Narrow, sans-serif" font-size="72" letter-spacing="8" fill="#ffffff">{e(title.upper())}</text>
 </svg>
 """
 

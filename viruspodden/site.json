@@ -6,6 +6,7 @@
 
   "title": "Viruspodden",
   "tagline": "Sveriges första podcast om virus och virussjukdomar",
+  "byline": "med Lennart Svensson och Åke Lundkvist",
   "intro": "Professorerna Lennart Svensson och Åke Lundkvist bjuder in ledande experter och diskuterar såväl nutida som dåtida virusämnen.",
   "about": [
     "Viruspodden är Sveriges första podcast om virus och virussjukdomar. Den produceras av Lennart Svensson och Åke Lundkvist, som bjuder in ledande experter och diskuterar såväl nutida som dåtida virusämnen.",
@@ -20,12 +21,13 @@
 
   "platforms": {
     "spotify": "",
-    "apple": "",
-    "podbean": "",
+    "apple": "https://podcasts.apple.com/se/podcast/viruspodden/id1595818427",
+    "podbean": "https://viruspodden.podbean.com",
     "youtube": "",
     "amazon": ""
   },
 
+  "hosts_photo": "img/programledare.jpg",
   "hosts": [
     {
       "name": "Lennart Svensson",
