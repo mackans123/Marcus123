@@ -45,6 +45,11 @@ Every agent in `.claude/agents/ai-seo-*.md` reads this file first.
 - Any task that needs a redirect, slug change or consolidation is **ON HOLD (needs SEO team)** in TASKS.md.
 - Never run a full Webflow site publish. It would push other people's pending changes. Publish only individual CMS items that have no pending edits (lastUpdated ≤ lastPublished before our change). Page-level changes stay staged for the web team's next publish.
 
+## Link changes (rule added 2026-11-06)
+- Any change to a link must also verify that the **destination returns 200** before and after publishing. Format checks alone are not enough.
+- Internal links use the final canonical form `https://www.albacross.com/path` (no trailing slash, no UTM), so there are zero redirect hops.
+- Replace a dead link with the **most topically relevant live page**, never the homepage as a catch-all. If nothing relevant exists, remove the link and keep the anchor text.
+
 ## Page blueprints
 
 ### Listicle / alternatives (`best-*`, `*-alternatives`)
